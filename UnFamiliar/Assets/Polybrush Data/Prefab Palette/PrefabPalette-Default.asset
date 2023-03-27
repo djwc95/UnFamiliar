@@ -50,9 +50,60 @@ MonoBehaviour:
   - gameObject: {fileID: 3748518897778714730, guid: d6d0436c69f20fa4b85695ec20beeb68,
       type: 3}
     settings:
-      m_Strength: 1
+      m_Strength: 34.75
       m_RotationRangeMin: {x: 0, y: 90, z: 54.93103}
       m_RotationRangeMax: {x: 0, y: 0, z: 54.93103}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1.4283054, y: 1.2048417, z: 1.4283054}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: ButterFlower_AD
+  - gameObject: {fileID: 1357487622057467410, guid: c67db72a1ec14974a866342ecc38bc21,
+      type: 3}
+    settings:
+      m_Strength: 19.64
+      m_RotationRangeMin: {x: 0, y: 0, z: 109.016266}
+      m_RotationRangeMax: {x: 328.58853, y: 343.98633, z: 280.23953}
+      m_ScaleRangeMin: {x: 1.1938502, y: 1.1799991, z: 1.154336}
+      m_ScaleRangeMax: {x: 1.9179813, y: 1.9411423, z: 1.8651402}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Tree02_JT
+  - gameObject: {fileID: 8074662392030748777, guid: f8df89a4d9d211949a48a961365750c3,
+      type: 3}
+    settings:
+      m_Strength: 9.01
+      m_RotationRangeMin: {x: 0, y: 0, z: 109.016266}
+      m_RotationRangeMax: {x: 328.58853, y: 343.98633, z: 280.23953}
+      m_ScaleRangeMin: {x: 1.5383567, y: 1.8131462, z: 1.7129954}
+      m_ScaleRangeMax: {x: 3.3518724, y: 3.5240092, z: 3.4666295}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Tree01_JT
+  - gameObject: {fileID: 919132149155446097, guid: 299070bd53b43cb4b995d53372c810cb,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
       m_UniformScale: {x: 1, y: 1}
@@ -63,4 +114,106 @@ MonoBehaviour:
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: ButterFlower_AD
+    name: PicketFence_KW
+  - gameObject: {fileID: 1536947811035971141, guid: 8555b6c8c2e42884abc0afb800f82f62,
+      type: 3}
+    settings:
+      m_Strength: 9.01
+      m_RotationRangeMin: {x: 0, y: 0, z: 109.016266}
+      m_RotationRangeMax: {x: 328.58853, y: 343.98633, z: 280.23953}
+      m_ScaleRangeMin: {x: 3.0001817, y: 3.17255, z: 3.0351553}
+      m_ScaleRangeMax: {x: 4.8136973, y: 4.8834147, z: 4.78879}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Tree04_JT
+  - gameObject: {fileID: 7388669024331660245, guid: 65543bb8bcc680b4cb44c0459a71f7a7,
+      type: 3}
+    settings:
+      m_Strength: 7.94
+      m_RotationRangeMin: {x: 0, y: 0, z: 109.016266}
+      m_RotationRangeMax: {x: 328.58853, y: 343.98633, z: 280.23953}
+      m_ScaleRangeMin: {x: 1.1938502, y: 1.1799991, z: 1.154336}
+      m_ScaleRangeMax: {x: 1.9179813, y: 1.9411423, z: 1.8651402}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: BushPlant01_EM
+  - gameObject: {fileID: 3892717015600920283, guid: 96e18e45066f28549984a35089872624,
+      type: 3}
+    settings:
+      m_Strength: 26.66
+      m_RotationRangeMin: {x: 0, y: 90, z: 54.93103}
+      m_RotationRangeMax: {x: 0, y: 0, z: 54.93103}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1.4283054, y: 1.2048417, z: 1.4283054}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: DragonFlower_AD
+  - gameObject: {fileID: 6323201322586898472, guid: 587829cccdad83d4c80d8f981a88dd08,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 60.67039, z: 0}
+      m_ScaleRangeMin: {x: 6.191807, y: 6.1918063, z: 5.8286777}
+      m_ScaleRangeMax: {x: 9.087524, y: 9.096832, z: 8.780258}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Grass_EM
+  - gameObject: {fileID: 2369238077618088572, guid: fc8d876cc40523b4fb7272a9c352c055,
+      type: 3}
+    settings:
+      m_Strength: 100
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 37.5419, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1.3631284, y: 1.3724395, z: 1.3724395}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: GrassShort_EM Variant
+  - gameObject: {fileID: 6285363006630098036, guid: 7ca3d7a2213124d4f83539562385ebcf,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 54.63687, z: 0}
+      m_ScaleRangeMin: {x: 1.0335195, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1.2383612, y: 1, z: 1.2234637}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: stonePath_EM
