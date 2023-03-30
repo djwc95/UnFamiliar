@@ -2606,6 +2606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadCanvas: {fileID: 2132832890}
   mainCanvas: {fileID: 732894487}
+  lvlToLoad: 1
 --- !u!4 &1930979407
 Transform:
   m_ObjectHideFlags: 0

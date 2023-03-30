@@ -9,8 +9,8 @@ public class SoulFragment : MonoBehaviour
     public PlayerMovement2 pm2;
     //========================UI Elements=====================
     public CanvasGroup canvas;
-    public float fadeTime;
-    public float waitTime;
+    private float fadeTime;
+    private float waitTime;
 
     public int soulsCollected;
     //=========================Images==========================
@@ -31,7 +31,7 @@ public class SoulFragment : MonoBehaviour
     public AudioClip clip;
 
     public Animator animator;
-    public string disappear = "disappear";
+    private string disappear = "disappear";
 
     private Vector3 thisLocation;
     public GameObject particles;
@@ -48,10 +48,10 @@ public class SoulFragment : MonoBehaviour
             StartCoroutine(Visible());
             StartCoroutine(LockPlayer());
             animator.Play(disappear, 0, 0f);
-            Instantiate(particles, thisLocation, Quaternion.identity);
+            Instantiate(particles, thisLocation, Quaternion.identity); //particleFX
             soulSO.soulsNum++;
 
-            source.clip = clip;
+            source.clip = clip; //play sound
             source.Play();
         }
     }
@@ -59,7 +59,7 @@ public class SoulFragment : MonoBehaviour
     public IEnumerator LockPlayer()
     {
         pm2.LockMovement();
-        yield return new WaitForSeconds(1.25f);
+        yield return new WaitForSeconds(2.5f);
         pm2.UnLockMovement();
     }
 
@@ -101,8 +101,8 @@ public class SoulFragment : MonoBehaviour
         {
             StartCoroutine(Visible());
         }
-
-        if (soulSO.soulsNum == 0)
+        //================== Fill in Sprite with correct num of souls =============================
+        if (soulSO.soulsNum == 0) 
         {
             empty.sprite = zero;
         }

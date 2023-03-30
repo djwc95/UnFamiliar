@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using Unity.Mathematics;
 using UnityEngine.UI;
+//using static UnityEditor.PlayerSettings;
+using Unity.Burst.CompilerServices;
 
 public class PlayerMovement2 : MonoBehaviour
 {
@@ -28,10 +30,15 @@ public class PlayerMovement2 : MonoBehaviour
     //=======================Stamina system==========================
     public float stamina = 50f;
     private float staminaConsumption = 10f;
-    private float rechargeRate = 5f;
+    private float rechargeRate = 7.5f;
     private float maxStamina = 50f;
     public Slider staminaBar;
-    
+
+    //======================= Rotate Cat=============================
+    public GameObject carModel;
+    public Transform raycastPoint; 
+    private RaycastHit hit;
+
     public float xDirect;
     private float zLock;
 
@@ -63,7 +70,7 @@ public class PlayerMovement2 : MonoBehaviour
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer)
         {
-            groundedTimer = 0.2f; // small buffer to allow jumping on ramps (unlike v1)
+            groundedTimer = 0.4f; // small buffer to allow jumping on ramps (unlike v1)
         }
         if (groundedTimer > 0)
         {
@@ -121,6 +128,10 @@ public class PlayerMovement2 : MonoBehaviour
                 StartCoroutine(StaminaRecharge());
             }
         }
+        if (stamina > maxStamina)
+        {
+            stamina = maxStamina;
+        }
         staminaBar.value = stamina;
 
         if (move.x < 0)
@@ -132,7 +143,16 @@ public class PlayerMovement2 : MonoBehaviour
             transform.rotation = Quaternion.Lerp(right, left, Time.deltaTime * rotationSpeed); //rotate the player in the direction we are moving in
         }
 
+        //============================== ROTATE CAT TO MATCH THE TERRAIN =========================
+        // Find location and slope of ground below the vehicle
+        Physics.Raycast(raycastPoint.position, Vector3.down, out hit, 1);    // Keep at specific height above terrain
+
+        // Rotate to align with terrain
+        var targetRotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 100);
+
         controller.Move(move * Time.deltaTime); // always call at the end so everything else is already lined up properly
+
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -142,7 +162,7 @@ public class PlayerMovement2 : MonoBehaviour
         {
             return;
         }
-        Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, 0); //else, push it
+        Vector3 pushDir = new Vector3(hit.moveDirection.x, hit.moveDirection.y, 0); //else, push it
         body.velocity = pushDir * pushForce;
     }
 

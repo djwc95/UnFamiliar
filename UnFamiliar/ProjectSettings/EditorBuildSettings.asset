@@ -12,8 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/City.unity
     guid: 4ad281cf95f4c0d4d9dbd28252a67f95
   - enabled: 1
+    path: Assets/Scenes/Playground.unity
+    guid: 6cf9e8dfce51dbc4b9ebed5cfd1576b1
+  - enabled: 1
     path: Assets/Scenes/Forest.unity
     guid: c08ed5049eaeb9849a8e929338f918c4
+  - enabled: 1
+    path: Assets/Scenes/Cave.unity
+    guid: 66d05772b2106ca4dbd4f29470ec7095
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: d0e24b24535725941aeebd7e794135ee

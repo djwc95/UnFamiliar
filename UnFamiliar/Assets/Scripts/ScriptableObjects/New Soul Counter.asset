@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa4d6c5f3a59a6840a40f22ec5f8425e, type: 3}
   m_Name: New Soul Counter
   m_EditorClassIdentifier: 
-  soulsNum: 1
+  soulsNum: 0

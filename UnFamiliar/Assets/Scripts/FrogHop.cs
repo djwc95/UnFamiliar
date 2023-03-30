@@ -10,7 +10,10 @@ public class FrogHop : MonoBehaviour
 
     public Animator frogAnimator;
     public float coolDown;
-    private float fullCoolDown = 2.5f;
+    public float fullCoolDown = 2.5f;
+
+    public float minRange;
+    public float maxRange;
 
     private void Start()
     {
@@ -43,8 +46,8 @@ public class FrogHop : MonoBehaviour
 
     public IEnumerator RollTime()
     {
-        frogAnimator.SetBool("turn", false);
-        yield return new WaitForSeconds(Random.Range( 2.5f, 7.5f));
+        frogAnimator.SetTrigger("turn");
+        yield return new WaitForSeconds(Random.Range( minRange, maxRange));
         frogAnimator.SetBool("turn", true);
         yield return new WaitForSeconds(.1f);
         frogAnimator.SetBool("turn", false);

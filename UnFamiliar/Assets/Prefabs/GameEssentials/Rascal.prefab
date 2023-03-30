@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &547768083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547768084}
+  m_Layer: 0
+  m_Name: raycast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &547768084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547768083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2260, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1100118143683612241}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3553743522383586
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +895,8 @@ Transform:
   m_LocalPosition: {x: 0.000000074505806, y: 0, z: 0}
   m_LocalScale: {x: 0.000100000005, y: 0.0001, z: 0.000100000005}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 547768084}
   m_Father: {fileID: 8016832422675419938}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -890,7 +922,7 @@ SkinnedMeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: d02151d26fc8c7449808a4252dd57a8c, type: 2}
   - {fileID: 1993282308170107758, guid: 041c9b4b2b375904aadf990ec0f1b8c6, type: 3}
-  - {fileID: 4247043441468484335, guid: 041c9b4b2b375904aadf990ec0f1b8c6, type: 3}
+  - {fileID: 2100000, guid: 22af33e9b27c7fe44828c6a5d48e601e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1953,6 +1985,7 @@ GameObject:
   - component: {fileID: 7551195033591937899}
   - component: {fileID: 7551195033591937897}
   - component: {fileID: 7551195033591937902}
+  - component: {fileID: 2133562793}
   m_Layer: 3
   m_Name: Rascal
   m_TagString: Player
@@ -2005,7 +2038,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7208664526447135128}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 1208556dcbcd18d4ab85bd9ec3146ce6,
     type: 2}
@@ -2128,7 +2161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm2: {fileID: 7551195033591937897}
-  rascalAnimator: {fileID: 0}
+  rascalAnimator: {fileID: 7551195033591937898}
   rascal: {fileID: 0}
   countDown: 0.25
 --- !u!114 &7551195033591937897
@@ -2165,6 +2198,10 @@ MonoBehaviour:
       z: 0
       w: -0.00000004371139
   rotationSpeed: 0.01
+  stamina: 50
+  staminaBar: {fileID: 0}
+  carModel: {fileID: 7208664526447135128}
+  raycastPoint: {fileID: 547768084}
   xDirect: 0
 --- !u!114 &7551195033591937902
 MonoBehaviour:
@@ -2189,6 +2226,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bff82e12170e2cb40ae2629b62d0f09c, type: 3}
   - {fileID: 8300000, guid: d550e3eab1af1764cab4577e68a1237d, type: 3}
   coolDown: 2.75
+--- !u!114 &2133562793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7208664526447135128}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de62882bfad4fd24b937825c38e2a317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carModel: {fileID: 7208664526447135128}
+  raycastPoint: {fileID: 547768084}
 --- !u!1 &7408907496153895868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2652,7 +2703,7 @@ PrefabInstance:
     - target: {fileID: 3492204591033861916, guid: 6e556e9495f4f4d4c847392b9509a5be,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3492204591033861919, guid: 6e556e9495f4f4d4c847392b9509a5be,
         type: 3}
@@ -2797,7 +2848,7 @@ PrefabInstance:
     - target: {fileID: 5131028538892692043, guid: f4de97bf8d2016843a296004ba0f66f4,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4de97bf8d2016843a296004ba0f66f4, type: 3}
