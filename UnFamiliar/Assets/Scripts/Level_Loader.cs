@@ -38,6 +38,11 @@ public class Level_Loader : MonoBehaviour
         SceneManager.LoadScene("SettingsMenu");
     }
 
+    public void Instructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
+
     public void PlaySound()
     {
         buttonSound.Play();
