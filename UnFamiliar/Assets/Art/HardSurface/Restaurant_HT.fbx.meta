@@ -3,7 +3,27 @@ guid: 18475e24cd443b148b2b0ff24f397a1d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: awning1.001
+    second: {fileID: 2100000, guid: 7534246107552014891076d4dff46edb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: default.001
+    second: {fileID: 2100000, guid: 4bcf7d52db06ceb46a696d59588677cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass.002
+    second: {fileID: 2100000, guid: c5d0f33b33dc1d448be0384843de30c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trim
+    second: {fileID: 2100000, guid: 5a9ed4ee8ae2ab44e89e2a2e97254669, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
