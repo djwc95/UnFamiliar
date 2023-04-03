@@ -94,7 +94,7 @@ public class PlayerMovement2 : MonoBehaviour
         // allow jump as long as the player is on the ground
         if (Input.GetButtonDown("Jump"))
         {
-            // must have been grounded recently to allow jump
+            // must have been grounded recently to allow jump ,aka coyote time
             if (groundedTimer > 0)
             {
                 // no more jumps until we land
@@ -168,7 +168,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     public IEnumerator StaminaRecharge()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.75f);
         stamina += rechargeRate * Time.deltaTime;
     }
 }

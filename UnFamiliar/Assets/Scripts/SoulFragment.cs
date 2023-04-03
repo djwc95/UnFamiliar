@@ -9,8 +9,8 @@ public class SoulFragment : MonoBehaviour
     public PlayerMovement2 pm2;
     //========================UI Elements=====================
     public CanvasGroup canvas;
-    private float fadeTime;
-    private float waitTime;
+    public float fadeTime;
+    public float visibleTime;
 
     public int soulsCollected;
     //=========================Images==========================
@@ -66,7 +66,7 @@ public class SoulFragment : MonoBehaviour
     public IEnumerator Visible()
     {
         StartCoroutine(FadeIn());
-        yield return new WaitForSeconds(waitTime);
+        yield return new WaitForSeconds(visibleTime);
         StartCoroutine(FadeOut());
     }
 

@@ -115,8 +115,8 @@ MonoBehaviour:
   soulSO: {fileID: 11400000, guid: 80f959c35cea5e6438bb67aa798f3f16, type: 2}
   pm2: {fileID: 0}
   canvas: {fileID: 0}
-  fadeTime: 2
-  waitTime: 5
+  fadeTime: 3
+  visibleTime: 1.75
   soulsCollected: 0
   empty: {fileID: 0}
   zero: {fileID: 21300000, guid: bb8d84468e02c4c49b8b8c83b4d28805, type: 3}
@@ -132,7 +132,6 @@ MonoBehaviour:
   source: {fileID: 7234497654760178658}
   clip: {fileID: 8300000, guid: 589fdc666475b2643956b7e345e8d43d, type: 3}
   animator: {fileID: 2565499329055998031}
-  disappear: disappear
   particles: {fileID: 1171136648328235526, guid: d9bd5a098dc25314c8cc21a6fa2f47ec,
     type: 3}
 --- !u!95 &2565499329055998031
