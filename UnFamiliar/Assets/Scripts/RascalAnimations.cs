@@ -30,6 +30,8 @@ public class RascalAnimations : MonoBehaviour
     {
         WalkCheck();
         RunCheck();
+        JumpCheck();
+        GroundCheck();
     }
 
     public void WalkCheck()
@@ -102,5 +104,23 @@ public class RascalAnimations : MonoBehaviour
             rascalAnimator.SetBool("randRoll", false);
         }
         
+    }
+
+    public void JumpCheck()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            rascalAnimator.SetBool("jump", true);
+            rascalAnimator.SetBool("grounded", false);
+        }
+    }
+
+    public void GroundCheck()
+    {
+        if (pm2.groundedPlayer)
+        {
+            rascalAnimator.SetBool("grounded", true);
+            rascalAnimator.SetBool("jump", false);
+        }
     }
 }
