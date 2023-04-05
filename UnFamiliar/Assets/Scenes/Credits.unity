@@ -581,6 +581,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 0}
+  loadCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
 --- !u!4 &908347834
 Transform:
   m_ObjectHideFlags: 0
@@ -730,7 +732,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -2029,7 +2029,7 @@ CharacterController:
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.0001
-  m_MinMoveDistance: 0
+  m_MinMoveDistance: 0.0001
   m_Center: {x: 0.09, y: 0.33, z: 0}
 --- !u!82 &7551195033591937903
 AudioSource:
