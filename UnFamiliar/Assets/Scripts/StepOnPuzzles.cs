@@ -53,9 +53,7 @@ public class StepOnPuzzles : MonoBehaviour
 
     private IEnumerator Timeout()
     {
-        Debug.Log("Timed out");
-        yield return new WaitForSeconds(1.25f);
-        
+        yield return new WaitForSeconds(.75f);
         canClick= true;
     }
 }
