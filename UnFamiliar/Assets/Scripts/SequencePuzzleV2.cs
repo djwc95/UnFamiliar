@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class SequencePuzzleV2 : MonoBehaviour
 {
+    public DestroyThis destroyThis;
     private int buttonsPushed = 0;
 
     public List<int> correctSequence = new List<int>();
@@ -26,9 +27,9 @@ public class SequencePuzzleV2 : MonoBehaviour
     public GameObject rune1;
     public GameObject rune2;
     public GameObject rune3;
+    public GameObject particles;
 
     [SerializeField] private Animator gate = null;
-    [SerializeField] private Animator disapperingRunes;
 
     void Update()
     {
@@ -38,9 +39,9 @@ public class SequencePuzzleV2 : MonoBehaviour
         }
         else if (buttonsPushed >= 5) //reset puzzle after we pushed all buttons
         {
+            destroyThis.Destroy();
             buttonsPushed = 0;
             currentSequence.Clear();
-            StartCoroutine(Reset());
         }
     }
 
@@ -52,22 +53,27 @@ public class SequencePuzzleV2 : MonoBehaviour
         if (buttonsPushed == 1)
         {
             Instantiate(rune1, position1.position, position1.rotation);
+            Instantiate(particles, position1.position, position1.rotation);
         }
         else if (buttonsPushed == 2)
         {
             Instantiate(rune1, position2.position, position2.rotation);
+            Instantiate(particles, position2.position, position2.rotation);
         }
         else if (buttonsPushed == 3)
         {
             Instantiate(rune1, position3.position, position3.rotation);
+            Instantiate(particles, position3.position, position3.rotation);
         }
         else if (buttonsPushed == 4)
         {
             Instantiate(rune1, position4.position, position4.rotation);
+            Instantiate(particles, position4.position, position4.rotation);
         }
         else if (buttonsPushed == 5)
         {
             Instantiate(rune1, position5.position, position5.rotation);
+            Instantiate(particles, position5.position, position5.rotation);
         }
     }
 
@@ -78,22 +84,27 @@ public class SequencePuzzleV2 : MonoBehaviour
         if (buttonsPushed == 1)
         {
             Instantiate(rune2, position1.position, position1.rotation);
+            Instantiate(particles, position1.position, position1.rotation);
         }
         else if (buttonsPushed == 2)
         {
             Instantiate(rune2, position2.position, position2.rotation);
+            Instantiate(particles, position2.position, position2.rotation);
         }
         else if (buttonsPushed == 3)
         {
             Instantiate(rune2, position3.position, position3.rotation);
+            Instantiate(particles, position3.position, position3.rotation);
         }
         else if (buttonsPushed == 4)
         {
             Instantiate(rune2, position4.position, position4.rotation);
+            Instantiate(particles, position4.position, position4.rotation);
         }
         else if (buttonsPushed == 5)
         {
             Instantiate(rune2, position5.position, position5.rotation);
+            Instantiate(particles, position5.position, position5.rotation);
         }
     }
 
@@ -105,29 +116,27 @@ public class SequencePuzzleV2 : MonoBehaviour
         if (buttonsPushed == 1)
         {
             Instantiate(rune3, position1.position, position1.rotation);
+            Instantiate(particles, position1.position, position1.rotation);
         }
         else if (buttonsPushed == 2)
         {
             Instantiate(rune3, position2.position, position2.rotation);
+            Instantiate(particles, position2.position, position2.rotation);
         }
         else if (buttonsPushed == 3)
         {
             Instantiate(rune3, position3.position, position3.rotation);
+            Instantiate(particles, position3.position, position3.rotation);
         }
         else if (buttonsPushed == 4)
         {
             Instantiate(rune3, position4.position, position4.rotation);
+            Instantiate(particles, position4.position, position4.rotation);
         }
         else if (buttonsPushed == 5)
         {
             Instantiate(rune3, position5.position, position5.rotation);
+            Instantiate(particles, position5.position, position5.rotation);
         }
-    }
-
-    public IEnumerator Reset()
-    {
-        disapperingRunes.SetBool("Reset", true);
-        yield return new WaitForSeconds(.2f);
-        disapperingRunes.SetBool("Reset", false);
     }
 }

@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class FloorIsLava : MonoBehaviour
 {
-    public GameObject player;
     public RespawnScript respawnScript;
-    public Transform respawnPoint;
 
+    public bool canFlash = true;
     public float timeUntilDeath;
     public float currentTime;
-
+    public Material rascalMat;
     // Start is called before the first frame update
     void Start()
     {
         currentTime = timeUntilDeath;
+        
     }
 
     // Update is called once per frame
@@ -32,14 +32,21 @@ public class FloorIsLava : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             currentTime -= Time.deltaTime;
+            if (canFlash == true)
+            {
+                Debug.Log("flashing");
+                StartCoroutine(FlashRed());
+                canFlash= false;
+            }
         }
     }
 
-    public void OnTriggerExit(Collider other)
+    public IEnumerator FlashRed()
     {
-        if (other.gameObject.tag == "Player")
-        {
-            currentTime = timeUntilDeath;
-        }
+        rascalMat.color = Color.red;
+        yield return new WaitForSeconds(.15f);
+        rascalMat.color = Color.black;
+        yield return new WaitForSeconds(.15f);
+        canFlash= true;
     }
 }
