@@ -15,6 +15,7 @@ TagManager:
   - Button1
   - Button2
   - Button3
+  - BetaControls
   layers:
   - Default
   - TransparentFX
