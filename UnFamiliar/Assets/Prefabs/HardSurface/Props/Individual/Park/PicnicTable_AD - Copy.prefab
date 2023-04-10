@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 6854631138977620342}
   - component: {fileID: 6854631138977620345}
   - component: {fileID: 6854631138977620344}
+  - component: {fileID: 170946370816319414}
   m_Layer: 0
   m_Name: PicnicTable_AD - Copy
-  m_TagString: Untagged
+  m_TagString: StepSwitch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -125,3 +126,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4889028, y: 0.039134204, z: 4.9679813}
   m_Center: {x: -1.4050082, y: 0.87083364, z: 0.027038097}
+--- !u!65 &170946370816319414
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6044362200139585989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3561344, y: 2.93, z: 5.88}
+  m_Center: {x: 0.028607666, y: 0.7338123, z: 0.027038097}
