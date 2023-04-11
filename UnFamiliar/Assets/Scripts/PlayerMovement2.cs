@@ -144,12 +144,12 @@ public class PlayerMovement2 : MonoBehaviour
         }
 
         //============================== ROTATE CAT TO MATCH THE TERRAIN =========================
-        // Find location and slope of ground below the vehicle
+        // Find location and slope of ground below us
         Physics.Raycast(raycastPoint.position, Vector3.down, out hit, 1);    // Keep at specific height above terrain
 
         // Rotate to align with terrain
         var targetRotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 100);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 1000);
 
         controller.Move(move * Time.deltaTime); // always call at the end so everything else is already lined up properly
 

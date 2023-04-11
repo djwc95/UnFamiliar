@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6142437460547183612}
   - component: {fileID: 6142437460547183610}
-  - component: {fileID: 6142437460547183614}
   - component: {fileID: 6142437460547183615}
   - component: {fileID: 1406376641}
+  - component: {fileID: -2813506214081115489}
   m_Layer: 0
   m_Name: nextLevel
   m_TagString: Untagged
@@ -48,20 +48,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6142437460547183614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6142437460547183611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba27d63b5839b6441b8d62a93582bf0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loading: {fileID: 6142437460547183615}
-  lvlToLoad: 2
 --- !u!114 &6142437460547183615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,3 +78,17 @@ MonoBehaviour:
   buttonSound: {fileID: 0}
   loadCanvas: {fileID: 0}
   mainCanvas: {fileID: 0}
+--- !u!114 &-2813506214081115489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6142437460547183611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba27d63b5839b6441b8d62a93582bf0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loading: {fileID: 6142437460547183615}
+  lvlToLoad: 2

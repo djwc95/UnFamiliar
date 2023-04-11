@@ -7,10 +7,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 82182384447394483, guid: bd12d1c245e2b6e4dbab07e3cd72ee45,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 998da3a9264f44a4293a9ba4a64bb0e6, type: 2}
+    - target: {fileID: 82182384447394483, guid: bd12d1c245e2b6e4dbab07e3cd72ee45,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 998da3a9264f44a4293a9ba4a64bb0e6, type: 2}
     - target: {fileID: 4280584641765046462, guid: bd12d1c245e2b6e4dbab07e3cd72ee45,
         type: 3}
       propertyPath: m_Name
-      value: soulParticles - Copy 1
+      value: death
       objectReference: {fileID: 0}
     - target: {fileID: 5888293992712237005, guid: bd12d1c245e2b6e4dbab07e3cd72ee45,
         type: 3}
