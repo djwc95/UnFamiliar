@@ -16,6 +16,7 @@ TagManager:
   - Button2
   - Button3
   - BetaControls
+  - Rune
   layers:
   - Default
   - TransparentFX
