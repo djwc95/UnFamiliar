@@ -19,7 +19,16 @@ public class Loading : MonoBehaviour
 
    public IEnumerator LoadSceneAsync()
    {
+        yield return new WaitForSeconds(2.5f);
         AsyncOperation opreation = SceneManager.LoadSceneAsync(lvlToLoad);
         yield return null;
    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            LoadScene(lvlToLoad);
+        }
+    }
 }
