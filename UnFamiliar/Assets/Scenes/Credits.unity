@@ -581,6 +581,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 0}
+  loadCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
 --- !u!4 &908347834
 Transform:
   m_ObjectHideFlags: 0
@@ -1160,7 +1162,7 @@ MonoBehaviour:
   m_text: "Jamya Mosely\nJamie Raimundo\nAlana Trinidad\nJacob Tutor\n\n\nAsenath
     De Leon\nAllana Hardaway\nBreckon Hoyt\nEvan Mills \nSamantha Munguia\nJamie
     Raimundo\nAlana Trinidad\nJacob Tutor\nKatie Williams\n\n\nJamie Raimundo\nHugo
-    Tiznado\n\n\nDan Tran\nJacob Tutor\n\n\nAsenath De Leon\nEvan Mills\nAlana Hardaway\n\n\n\nHugo
+    Tiznado\n\n\nDan Tran\nJacob Tutor\n\n\nAsenath De Leon\nEvan Mills\nAllana Hardaway\n\n\n\nHugo
     Tiznado\nAlana Trinidad\n\n\nJamya Mosely\nJamie Raimundo\nJacob Tutor\n\n\nSamantha
     Munguia\nHugo Tiznado\nAlana Trinidad\n\n\nBreckon Hoyt\nSean Wallace\n\n\n\nBreckon
     Hoyt\nJamie Raimundo\nDan Tran\nAlana Trinidad\nJacob Tutor\nSean Wallace"
