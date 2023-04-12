@@ -33,10 +33,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature.001|Armature.001Action
+      name: shortenedJump
       takeName: Armature.001|Armature.001Action
       internalID: 2264077025236624520
-      firstFrame: 0
+      firstFrame: 5
       lastFrame: 15
       wrapMode: 0
       orientationOffsetY: 0
