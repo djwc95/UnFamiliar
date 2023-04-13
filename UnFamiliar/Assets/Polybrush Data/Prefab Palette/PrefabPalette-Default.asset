@@ -16,28 +16,28 @@ MonoBehaviour:
   - gameObject: {fileID: 4410049863539183649, guid: 362382ebb7c0f3d42840cef3675a2ef9,
       type: 3}
     settings:
-      m_Strength: 100
+      m_Strength: 13
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 318.18896, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1.5511811, y: 1.531496, z: 1.511811}
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
     name: Clover_JR
   - gameObject: {fileID: 6567274390904877383, guid: 80fe15e8a55cf0d4e951b3288ae76b84,
       type: 3}
     settings:
-      m_Strength: 100
+      m_Strength: 52.75
       m_RotationRangeMin: {x: 0, y: 0, z: 109.016266}
       m_RotationRangeMax: {x: 328.58853, y: 343.98633, z: 280.23953}
       m_ScaleRangeMin: {x: 0.597947, y: 0.6492729, z: 0.6236099}
-      m_ScaleRangeMax: {x: 2.4114628, y: 2.3601365, z: 2.377245}
+      m_ScaleRangeMax: {x: 2.4114628, y: 3.0097427, z: 2.377245}
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
@@ -152,11 +152,11 @@ MonoBehaviour:
   - gameObject: {fileID: 3892717015600920283, guid: 96e18e45066f28549984a35089872624,
       type: 3}
     settings:
-      m_Strength: 26.66
+      m_Strength: 56.399998
       m_RotationRangeMin: {x: 0, y: 90, z: 54.93103}
       m_RotationRangeMax: {x: 0, y: 0, z: 54.93103}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1.4283054, y: 1.2048417, z: 1.4283054}
+      m_ScaleRangeMax: {x: 1.4283054, y: 1.7011197, z: 1.4283054}
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
@@ -171,7 +171,7 @@ MonoBehaviour:
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 60.67039, z: 0}
+      m_RotationRangeMax: {x: 0, y: 318.62314, z: 0}
       m_ScaleRangeMin: {x: 6.191807, y: 6.1918063, z: 5.8286777}
       m_ScaleRangeMax: {x: 9.087524, y: 9.096832, z: 8.780258}
       m_UniformScale: {x: 1, y: 1}
@@ -188,17 +188,17 @@ MonoBehaviour:
     settings:
       m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 37.5419, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1.3631284, y: 1.3724395, z: 1.3724395}
+      m_RotationRangeMax: {x: 0, y: 294.78598, z: 0}
+      m_ScaleRangeMin: {x: 0.2559055, y: 0.2559055, z: 0.27559057}
+      m_ScaleRangeMax: {x: 0.46155387, y: 0.4708647, z: 0.49054974}
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
       m_YRotationBool: 1
       m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
     name: GrassShort_EM Variant
   - gameObject: {fileID: 6285363006630098036, guid: 7ca3d7a2213124d4f83539562385ebcf,
       type: 3}
@@ -288,7 +288,7 @@ MonoBehaviour:
   - gameObject: {fileID: 7829331006262510506, guid: d6b33e05e1f8ce94f90e049a87c14212,
       type: 3}
     settings:
-      m_Strength: 74.9
+      m_Strength: 23.150002
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 63.343113, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -305,9 +305,9 @@ MonoBehaviour:
   - gameObject: {fileID: 1814369246951411936, guid: 3594cfa78ac33a14a8538ce9671017bb,
       type: 3}
     settings:
-      m_Strength: 9.9
+      m_Strength: 34.649998
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 43.507107, z: 0}
+      m_RotationRangeMax: {x: 0, y: 159.63614, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1.8293839, y: 2.0663507, z: 1.7819905}
       m_UniformScale: {x: 1, y: 1}
@@ -319,3 +319,173 @@ MonoBehaviour:
       m_YScaleBool: 1
       m_ZScaleBool: 1
     name: PineTree03_EM
+  - gameObject: {fileID: 903492775321670142, guid: 8df5e3b967fd63d41acda675612ca409,
+      type: 3}
+    settings:
+      m_Strength: 20.8
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 217.07195, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1.8684864, y: 2.0173697, z: 1.9925559}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Mushroom03_KW
+  - gameObject: {fileID: 4813726701047173626, guid: cc213c2030e3a134d817be4bc9e99bc2,
+      type: 3}
+    settings:
+      m_Strength: 11.2
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 167.94044, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1.967742, y: 2.2158809, z: 1.9925559}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Mushroom03_HT
+  - gameObject: {fileID: 4116505778095936946, guid: dd091ccbfdf7c6149920bae14bba6c0f,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 170.62035, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 2.5632753, y: 2.3647642, z: 2.3647642}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Mushroom01_HT
+  - gameObject: {fileID: 6244766365267205840, guid: 25a50a37d40ac0640a6a062ad9b57915,
+      type: 3}
+    settings:
+      m_Strength: 6.1
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 78.61042, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 2.4640198, y: 2.9602978, z: 2.4392061}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Mushroom02_BH
+  - gameObject: {fileID: 2513296473549159544, guid: 719f7ea825d247f4a8b50e3c9289f0c1,
+      type: 3}
+    settings:
+      m_Strength: 22.2
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 337.3457, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 2.0421836, y: 2.0421836, z: 2.2158809}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Mushroom01_KW Variant
+  - gameObject: {fileID: 8731400054255657892, guid: 9c32d269cf0b86f488e555c275cdc55f,
+      type: 3}
+    settings:
+      m_Strength: 20.349998
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 345.00204, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 2.3399506, y: 2.2158809, z: 2.488834}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Mushroom01_HT Variant
+  - gameObject: {fileID: 2496860339132852081, guid: d12da2cb31396f941922bb4edda1f071,
+      type: 3}
+    settings:
+      m_Strength: 8.3
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 338.64694, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 2.166253, y: 2.7617865, z: 2.5384617}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Mushroom02_HT Variant
+  - gameObject: {fileID: 5313671405079371519, guid: ca4f1647ed9f36a4387d0a8c8ee63bd3,
+      type: 3}
+    settings:
+      m_Strength: 1.0000002
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 289.13385, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1.7677165, y: 1.8070867, z: 1.6102362}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: BellFlower_EM
+  - gameObject: {fileID: 3328126636696859915, guid: 9b48c82cb28c2884c83f0821732aa7bb,
+      type: 3}
+    settings:
+      m_Strength: 14
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 301.1811, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1.8070867, y: 1.8464568, z: 1.8464568}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: LeafPlant_SM
+  - gameObject: {fileID: 1245342164831384012, guid: 6312b418d2cfeb143b3a7c31f1ce3154,
+      type: 3}
+    settings:
+      m_Strength: 38.75
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Fern_EM
