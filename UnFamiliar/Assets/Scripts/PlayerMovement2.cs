@@ -9,6 +9,8 @@ public class PlayerMovement2 : MonoBehaviour
 {
     // a fix to the weird character controller v1
     // minimal air control
+    public GroundChecker groundChecker;
+
     public CharacterController controller;
     public float verticalVelocity;
     private float groundedTimer;        // to allow jumping when going down ramps
@@ -134,22 +136,50 @@ public class PlayerMovement2 : MonoBehaviour
         }
         staminaBar.value = stamina;
 
-        if (move.x < 0)
-        {
-            transform.rotation = Quaternion.Lerp(left, right, Time.deltaTime * rotationSpeed); //rotate the player in the direction we are moving in
-        }
-        else if (move.x > 0)
-        {
-            transform.rotation = Quaternion.Lerp(right, left, Time.deltaTime * rotationSpeed); //rotate the player in the direction we are moving in
-        }
+       
 
         //============================== ROTATE CAT TO MATCH THE TERRAIN =========================
         // Find location and slope of ground below us
         Physics.Raycast(raycastPoint.position, Vector3.down, out hit, 1);    // Keep at specific height above terrain
 
         // Rotate to align with terrain
-        var targetRotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 1000);
+        Quaternion target = Quaternion.Euler(0, 0, groundChecker.groundSlopeAngle);
+        if (move.x < 0) // moving left
+        {
+            if (groundChecker.rearSlopeHit.distance > groundChecker.frontSlopeHit.distance)
+            {
+                target = Quaternion.Euler(0, 180, -groundChecker.groundSlopeAngle);
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10);
+            }
+            else if (groundChecker.rearSlopeHit.distance < groundChecker.frontSlopeHit.distance)
+            {
+                target = Quaternion.Euler(0, 180, groundChecker.groundSlopeAngle);
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10);
+            }
+            else
+            {
+                target = Quaternion.Euler(0, 180, 0);
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10);
+            }
+        }
+        else if (move.x > 0) //moving right
+        {
+            if (groundChecker.rearSlopeHit.distance > groundChecker.frontSlopeHit.distance)
+            {
+                target = Quaternion.Euler(0, 0, groundChecker.groundSlopeAngle);
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10);
+            }
+            else if (groundChecker.rearSlopeHit.distance < groundChecker.frontSlopeHit.distance)
+            {
+                target = Quaternion.Euler(0, 0, -groundChecker.groundSlopeAngle);
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10);
+            }
+            else
+            {
+                target = Quaternion.Euler(0, 0, 0);
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10);
+            }
+        }
 
         controller.Move(move * Time.deltaTime); // always call at the end so everything else is already lined up properly
 
