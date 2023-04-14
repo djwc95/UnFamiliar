@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &9014430699714446716
 Transform:
@@ -117,7 +117,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8832413776269407260
 Transform:
@@ -404,7 +404,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8832413776407295525
 Transform:
@@ -519,7 +519,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8832413776637538877
 Transform:
@@ -610,7 +610,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8832413777229525311
 Transform:
@@ -900,7 +900,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8832413777396475884
 Transform:
@@ -1185,7 +1185,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8832413777575590951
 Transform:
@@ -1221,7 +1221,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8832413777685947482
 Transform:
@@ -1938,6 +1938,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PicketFenceBroken_KW (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 366229bee8e1a1c47bc0e6af184496be,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 366229bee8e1a1c47bc0e6af184496be, type: 3}
@@ -8563,6 +8568,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: window02_kw
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b9ce88be235df147b27e3935868222e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b9ce88be235df147b27e3935868222e, type: 3}
 --- !u!4 &9014430699479130792 stripped
@@ -11471,6 +11481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Windchime_HT
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce10088d4dd7ff84a93f62e121a4bafb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce10088d4dd7ff84a93f62e121a4bafb, type: 3}
@@ -19540,6 +19555,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PicketFenceBroken_KW (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 366229bee8e1a1c47bc0e6af184496be,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 366229bee8e1a1c47bc0e6af184496be, type: 3}
 --- !u!4 &9014430698539318848 stripped
@@ -20930,6 +20950,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Door03_SW
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ea996c0d8e33c54394bb05b741ea69a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ea996c0d8e33c54394bb05b741ea69a, type: 3}
@@ -23593,6 +23618,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lantern_KW
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9f2628cf734ea4042bc01ec28d887174,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f2628cf734ea4042bc01ec28d887174, type: 3}
 --- !u!4 &9014430698204342766 stripped
@@ -24978,6 +25008,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PicketFenceBroken_KW (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 366229bee8e1a1c47bc0e6af184496be,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 366229bee8e1a1c47bc0e6af184496be, type: 3}
@@ -27667,6 +27702,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b9ce88be235df147b27e3935868222e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b9ce88be235df147b27e3935868222e, type: 3}
 --- !u!4 &9014430698005709256 stripped
@@ -29052,6 +29092,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PicketFenceBroken_KW (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 366229bee8e1a1c47bc0e6af184496be,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 366229bee8e1a1c47bc0e6af184496be, type: 3}
@@ -30523,6 +30568,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b9ce88be235df147b27e3935868222e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b9ce88be235df147b27e3935868222e, type: 3}
 --- !u!4 &9014430697727656760 stripped
@@ -31909,6 +31959,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PicketFenceBroken_KW
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 366229bee8e1a1c47bc0e6af184496be,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 366229bee8e1a1c47bc0e6af184496be, type: 3}
 --- !u!4 &9014430697716533437 stripped
@@ -33294,6 +33349,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PicketFenceBroken_KW (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 366229bee8e1a1c47bc0e6af184496be,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 366229bee8e1a1c47bc0e6af184496be, type: 3}

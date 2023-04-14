@@ -144,6 +144,21 @@ public class PlayerMovement2 : MonoBehaviour
 
         // Rotate to align with terrain
         Quaternion target = Quaternion.Euler(0, 0, groundChecker.groundSlopeAngle);
+
+        if (!groundedPlayer) // how we rotate while airborne
+        {
+            if (move.x > 0)
+            {
+                target = Quaternion.Euler(0, 0, 0);
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10);
+            }
+            else if (move.x < 0)
+            {
+                target = Quaternion.Euler(0, 180, 0);
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10);
+            }
+        }
+
         if (move.x < 0) // moving left
         {
             if (groundChecker.rearSlopeHit.distance > groundChecker.frontSlopeHit.distance)

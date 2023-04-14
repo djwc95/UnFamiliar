@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 3384273573329094477, guid: 2790d1513649a4941bca71ddd2d7b548,
         type: 3}
       propertyPath: m_Name
-      value: Mushroom01_KW
+      value: Mushroom01_KW Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3888759950723933848, guid: 2790d1513649a4941bca71ddd2d7b548,
         type: 3}

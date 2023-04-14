@@ -18,6 +18,8 @@ TagManager:
   - BetaControls
   - Rune
   - VideoPlayer
+  - RascalHead
+  - RascalFeet
   layers:
   - Default
   - TransparentFX
