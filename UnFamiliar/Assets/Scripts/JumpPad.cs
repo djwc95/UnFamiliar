@@ -16,11 +16,15 @@ public class JumpPad : MonoBehaviour
             jumpNum++;
             if (jumpNum < 3)
             {
+                playerMovement2.canJump = false;
                 playerMovement2.verticalVelocity = smallJumpHeight; // increase the player's y position in the movement script by the value we set in unity
+                StartCoroutine(JumpCool());
             }
             else if (jumpNum >= 3)
             {
+                playerMovement2.canJump = false;
                 playerMovement2.verticalVelocity = bigJumpHeight; // increase the player's y position in the movement script by the value we set in unity
+                StartCoroutine(JumpCool());
             }
 
         }
@@ -32,5 +36,11 @@ public class JumpPad : MonoBehaviour
         {
             jumpNum = 0;
         }
+    }
+
+    public IEnumerator JumpCool()
+    {
+        yield return new WaitForSeconds(.5f);
+        playerMovement2.canJump = true;
     }
 }

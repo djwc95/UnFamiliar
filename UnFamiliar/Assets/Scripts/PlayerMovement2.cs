@@ -13,7 +13,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     public CharacterController controller;
     public float verticalVelocity;
-    private float groundedTimer;        // to allow jumping when going down ramps
+    public float groundedTimer;        // to allow jumping when going down ramps
     public float baseSpeed;
     public float speed;
     public float jumpHeight = 1.75f;
@@ -21,6 +21,7 @@ public class PlayerMovement2 : MonoBehaviour
     public float pushForce = 2f;
     
     public bool movementLocked;
+    public bool canJump = true;
     public bool groundedPlayer;
 
     public Vector3 move;
@@ -89,6 +90,7 @@ public class PlayerMovement2 : MonoBehaviour
         // constant gravity keeps us pulled down when going down ramps
         verticalVelocity -= gravity * Time.deltaTime;
 
+        
         move = new Vector3(Input.GetAxis("Horizontal"), 0, 0); //move only left/right
 
         move *= speed; // adjust speed in unity
@@ -96,14 +98,17 @@ public class PlayerMovement2 : MonoBehaviour
         // allow jump as long as the player is on the ground
         if (Input.GetButtonDown("Jump"))
         {
-            // must have been grounded recently to allow jump ,aka coyote time
-            if (groundedTimer > 0)
+            if (canJump)
             {
-                // no more jumps until we land
-                groundedTimer = 0;
+                // must have been grounded recently to allow jump ,aka coyote time
+                if (groundedTimer > 0)
+                {
+                    // no more jumps until we land
+                    groundedTimer = 0;
 
-                // Physics dynamics formula for calculating jump up velocity based on height and gravity
-                verticalVelocity += Mathf.Sqrt(jumpHeight * 2 * gravity);
+                    // Physics dynamics formula for calculating jump up velocity based on height and gravity
+                    verticalVelocity += Mathf.Sqrt(jumpHeight * 2 * gravity);
+                }
             }
         }
 
