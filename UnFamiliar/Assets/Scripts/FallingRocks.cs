@@ -8,14 +8,20 @@ public class FallingRocks : MonoBehaviour
     public Animator animator;
     public PlayerMovement2 pm2;
     public CinemachineImpulseSource screenShake;
+    private bool canActivate = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            animator.SetTrigger("Fall");
-            pm2.LockMovement();
-            StartCoroutine(ScreenShake());
+            canActivate= true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            canActivate = false;
         }
     }
 
@@ -36,5 +42,16 @@ public class FallingRocks : MonoBehaviour
         yield return new WaitForSeconds(.25f);
         screenShake.GenerateImpulse();
         pm2.UnLockMovement();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && canActivate)
+        {
+            animator.SetTrigger("Fall");
+            pm2.LockMovement();
+            StartCoroutine(ScreenShake());
+            canActivate= false;
+        }
     }
 }
