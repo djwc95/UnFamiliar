@@ -141,4 +141,11 @@ public class RascalAnimations : MonoBehaviour
             rascalAnimator.SetBool("jump", false);
         }
     }
+
+    public void SetIdle()
+    {
+        rascalAnimator.SetBool("walking", false);
+        rascalAnimator.SetBool("running", false);
+        IdleRoll(); //roll to see which idle animation we play
+    }
 }

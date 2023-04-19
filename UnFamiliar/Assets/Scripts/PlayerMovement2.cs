@@ -10,6 +10,7 @@ public class PlayerMovement2 : MonoBehaviour
     // a fix to the weird character controller v1
     // minimal air control
     public GroundChecker groundChecker;
+    public RascalAnimations rascalAnimations;
 
     public CharacterController controller;
     public float verticalVelocity;
@@ -67,6 +68,7 @@ public class PlayerMovement2 : MonoBehaviour
     {
         if (movementLocked == true)
         {
+            rascalAnimations.SetIdle();
             return;
         }
 
