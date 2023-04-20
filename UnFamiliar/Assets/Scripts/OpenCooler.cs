@@ -6,13 +6,14 @@ public class OpenCooler : MonoBehaviour
 {
     public Animator animator;
     public bool canOpen = true;
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if(Input.GetKeyDown(KeyCode.E) && canOpen)
-        {
-            animator.SetTrigger("Open");
-            StartCoroutine(Cooldown());
-        }
+        canOpen = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        canOpen = false;
     }
 
     public IEnumerator Cooldown()
@@ -20,5 +21,14 @@ public class OpenCooler : MonoBehaviour
         canOpen= false;
         yield return new WaitForSeconds(2);
         canOpen= true;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && canOpen)
+        {
+            animator.SetTrigger("Open");
+            StartCoroutine(Cooldown());
+        }
     }
 }

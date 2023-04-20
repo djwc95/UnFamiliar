@@ -31,13 +31,6 @@ public class PlayerMovement2 : MonoBehaviour
     public quaternion left = Quaternion.Euler(0f, 180f, 0f); // changing directions
     public float rotationSpeed = .01f;
 
-    //=======================Stamina system==========================
-    public float stamina = 50f;
-    private float staminaConsumption = 10f;
-    private float rechargeRate = 7.5f;
-    private float maxStamina = 50f;
-    public Slider staminaBar;
-
     //======================= Rotate Cat=============================
     public GameObject carModel;
     public Transform raycastPoint; 
@@ -51,7 +44,6 @@ public class PlayerMovement2 : MonoBehaviour
         //animator = GetComponent<Animator>();
         movementLocked= false;
         controller = gameObject.GetComponent<CharacterController>();
-        staminaBar.maxValue = 50f;
     }
 
     public void LockMovement()
@@ -122,28 +114,16 @@ public class PlayerMovement2 : MonoBehaviour
         }
 
         //============================ Sprinting and Stamina ==============================
-        if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = 3.75f; //sprint button
-            stamina -= staminaConsumption * Time.deltaTime; // drain stamina each second
         }
         else
         {
             speed = baseSpeed; // return us back to our base speed
 
             xDirect = Input.GetAxis("Horizontal") * speed;
-            if(stamina < maxStamina)
-            {
-                StartCoroutine(StaminaRecharge());
-            }
         }
-        if (stamina > maxStamina)
-        {
-            stamina = maxStamina;
-        }
-        staminaBar.value = stamina;
-
-       
 
         //============================== ROTATE CAT TO MATCH THE TERRAIN =========================
         // Find location and slope of ground below us
@@ -216,11 +196,5 @@ public class PlayerMovement2 : MonoBehaviour
         }
         Vector3 pushDir = new Vector3(hit.moveDirection.x, hit.moveDirection.y, 0); //else, push it
         body.velocity = pushDir * pushForce;
-    }
-
-    public IEnumerator StaminaRecharge()
-    {
-        yield return new WaitForSeconds(1.75f);
-        stamina += rechargeRate * Time.deltaTime;
     }
 }
