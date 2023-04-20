@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Video;
 
 public class PlayCutscene : MonoBehaviour
 {
     public GameObject videoCanvas;
-    public VideoPlayer player;
     public int videoLength;
     public Loading loading;
     public int levelToLoad;
@@ -26,7 +24,6 @@ public class PlayCutscene : MonoBehaviour
 
     public IEnumerator VideoPlay()
     {
-        player.Play();
         yield return new WaitForSeconds(videoLength);
         videoCanvas.SetActive(false);
         loading.LoadScene(levelToLoad);

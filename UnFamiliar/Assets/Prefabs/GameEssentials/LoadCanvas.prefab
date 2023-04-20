@@ -378,8 +378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tip: Objects with a glowing outline can be interacted with by pressing
-    the ''E'' key.'
+  m_text: 'Tip: If you''re feeling stuck, try pressing ''E'' to interact.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5891d247ce011f043afb155b6de8a98c, type: 2}
   m_sharedMaterial: {fileID: -2626952019731363096, guid: 5891d247ce011f043afb155b6de8a98c,
