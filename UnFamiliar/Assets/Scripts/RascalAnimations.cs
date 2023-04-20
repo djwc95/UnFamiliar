@@ -32,13 +32,13 @@ public class RascalAnimations : MonoBehaviour
     }
     public void Update()
     {
+        LockedCheck();
         WalkCheck();
         RunCheck();
         JumpCheck();
         GroundCheck();
     }
-
-    public void WalkCheck()
+    public void LockedCheck()
     {
         if (pm2.movementLocked == true) // if our movement is locked, then we are obviously idle
         {
@@ -46,6 +46,10 @@ public class RascalAnimations : MonoBehaviour
             rascalAnimator.SetBool("running", false);
             IdleRoll(); //roll to see which idle animation we play
         }
+    }
+
+    public void WalkCheck()
+    {
         if (pm2.groundedPlayer)
         {
             if (pm2.move.x > 0) // we are walking to the right
@@ -136,5 +140,12 @@ public class RascalAnimations : MonoBehaviour
             rascalAnimator.SetBool("grounded", true);
             rascalAnimator.SetBool("jump", false);
         }
+    }
+
+    public void SetIdle()
+    {
+        rascalAnimator.SetBool("walking", false);
+        rascalAnimator.SetBool("running", false);
+        IdleRoll(); //roll to see which idle animation we play
     }
 }

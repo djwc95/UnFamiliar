@@ -9,7 +9,7 @@ public class NoStepOffset : MonoBehaviour
 
     private void Start()
     {
-        controller = GetComponent<CharacterController>();
+        //controller = GetComponent<CharacterController>();
         startValue = controller.stepOffset;
     }
     public void OnTriggerEnter(Collider other)

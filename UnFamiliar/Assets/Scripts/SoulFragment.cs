@@ -92,15 +92,6 @@ public class SoulFragment : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            StartCoroutine(Visible());
-        }
-
-        if(pm2.stamina <=0)
-        {
-            StartCoroutine(Visible());
-        }
         //================== Fill in Sprite with correct num of souls =============================
         if (soulSO.soulsNum == 0) 
         {

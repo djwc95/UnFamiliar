@@ -21,10 +21,10 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.34
+    m_Value: 0.204
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.608
   rounded:
     m_OverrideState: 1
     m_Value: 0
@@ -43,10 +43,10 @@ MonoBehaviour:
   active: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 2.61
+    m_Value: 0.9
   intensity:
     m_OverrideState: 1
-    m_Value: 7.72
+    m_Value: 0.4
   scatter:
     m_OverrideState: 1
     m_Value: 0.7
@@ -57,10 +57,10 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   highQualityFiltering:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   skipIterations:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   dirtTexture:
     m_OverrideState: 1
@@ -104,7 +104,7 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
 --- !u!114 &3972920553405673162
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -123,10 +123,10 @@ MonoBehaviour:
     m_Value: 1
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 50.1
+    m_Value: 96.8
   gaussianEnd:
     m_OverrideState: 1
-    m_Value: 50.16
+    m_Value: 146.1
   gaussianMaxRadius:
     m_OverrideState: 1
     m_Value: 1.5
@@ -169,16 +169,16 @@ MonoBehaviour:
     m_Value: 0.2
   contrast:
     m_OverrideState: 1
-    m_Value: 35
+    m_Value: 8
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 1.035265, g: 0.87693036, b: 0.79979295, a: 1}
+    m_Value: {r: 0.98251945, g: 0.9669811, b: 1, a: 1}
   hueShift:
     m_OverrideState: 0
     m_Value: 133
   saturation:
     m_OverrideState: 1
-    m_Value: -21
+    m_Value: 36
 --- !u!114 &5893814362600966093
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb60a22f311433c4c962b888d1393f88, type: 3}
   m_Name: PaniniProjection
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   distance:
     m_OverrideState: 1
     m_Value: 0.14
@@ -213,10 +213,10 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.8461583, y: 1, z: 0.8527791, w: 0}
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 0.5818826, y: 1, z: 0.6373466, w: -0.014825793}
+    m_Value: {x: 0.964426, y: 0.9916783, z: 1, w: 0.028625958}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.28903186, y: 0.32759646, z: 1, w: 0}
+    m_Value: {x: 0.97305, y: 0.9585093, z: 1, w: 0.0000000029336025}

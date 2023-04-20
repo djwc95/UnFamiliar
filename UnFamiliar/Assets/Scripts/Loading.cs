@@ -15,6 +15,7 @@ public class Loading : MonoBehaviour
         loadCanvas.SetActive(true);
         mainCanvas.SetActive(false);
         StartCoroutine(LoadSceneAsync());
+        Debug.Log("executed");
    }
 
    public IEnumerator LoadSceneAsync()

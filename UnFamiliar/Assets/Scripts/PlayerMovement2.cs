@@ -10,10 +10,11 @@ public class PlayerMovement2 : MonoBehaviour
     // a fix to the weird character controller v1
     // minimal air control
     public GroundChecker groundChecker;
+    public RascalAnimations rascalAnimations;
 
     public CharacterController controller;
     public float verticalVelocity;
-    private float groundedTimer;        // to allow jumping when going down ramps
+    public float groundedTimer;        // to allow jumping when going down ramps
     public float baseSpeed;
     public float speed;
     public float jumpHeight = 1.75f;
@@ -21,6 +22,7 @@ public class PlayerMovement2 : MonoBehaviour
     public float pushForce = 2f;
     
     public bool movementLocked;
+    public bool canJump = true;
     public bool groundedPlayer;
 
     public Vector3 move;
@@ -28,13 +30,6 @@ public class PlayerMovement2 : MonoBehaviour
     public quaternion right = Quaternion.Euler(0f, 0f, 0f);
     public quaternion left = Quaternion.Euler(0f, 180f, 0f); // changing directions
     public float rotationSpeed = .01f;
-
-    //=======================Stamina system==========================
-    public float stamina = 50f;
-    private float staminaConsumption = 10f;
-    private float rechargeRate = 7.5f;
-    private float maxStamina = 50f;
-    public Slider staminaBar;
 
     //======================= Rotate Cat=============================
     public GameObject carModel;
@@ -49,7 +44,6 @@ public class PlayerMovement2 : MonoBehaviour
         //animator = GetComponent<Animator>();
         movementLocked= false;
         controller = gameObject.GetComponent<CharacterController>();
-        staminaBar.maxValue = 50f;
     }
 
     public void LockMovement()
@@ -66,6 +60,7 @@ public class PlayerMovement2 : MonoBehaviour
     {
         if (movementLocked == true)
         {
+            rascalAnimations.SetIdle();
             return;
         }
 
@@ -89,6 +84,7 @@ public class PlayerMovement2 : MonoBehaviour
         // constant gravity keeps us pulled down when going down ramps
         verticalVelocity -= gravity * Time.deltaTime;
 
+        
         move = new Vector3(Input.GetAxis("Horizontal"), 0, 0); //move only left/right
 
         move *= speed; // adjust speed in unity
@@ -96,14 +92,17 @@ public class PlayerMovement2 : MonoBehaviour
         // allow jump as long as the player is on the ground
         if (Input.GetButtonDown("Jump"))
         {
-            // must have been grounded recently to allow jump ,aka coyote time
-            if (groundedTimer > 0)
+            if (canJump)
             {
-                // no more jumps until we land
-                groundedTimer = 0;
+                // must have been grounded recently to allow jump ,aka coyote time
+                if (groundedTimer > 0)
+                {
+                    // no more jumps until we land
+                    groundedTimer = 0;
 
-                // Physics dynamics formula for calculating jump up velocity based on height and gravity
-                verticalVelocity += Mathf.Sqrt(jumpHeight * 2 * gravity);
+                    // Physics dynamics formula for calculating jump up velocity based on height and gravity
+                    verticalVelocity += Mathf.Sqrt(jumpHeight * 2 * gravity);
+                }
             }
         }
 
@@ -115,28 +114,16 @@ public class PlayerMovement2 : MonoBehaviour
         }
 
         //============================ Sprinting and Stamina ==============================
-        if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = 3.75f; //sprint button
-            stamina -= staminaConsumption * Time.deltaTime; // drain stamina each second
         }
         else
         {
             speed = baseSpeed; // return us back to our base speed
 
             xDirect = Input.GetAxis("Horizontal") * speed;
-            if(stamina < maxStamina)
-            {
-                StartCoroutine(StaminaRecharge());
-            }
         }
-        if (stamina > maxStamina)
-        {
-            stamina = maxStamina;
-        }
-        staminaBar.value = stamina;
-
-       
 
         //============================== ROTATE CAT TO MATCH THE TERRAIN =========================
         // Find location and slope of ground below us
@@ -144,6 +131,21 @@ public class PlayerMovement2 : MonoBehaviour
 
         // Rotate to align with terrain
         Quaternion target = Quaternion.Euler(0, 0, groundChecker.groundSlopeAngle);
+
+        if (!groundedPlayer) // how we rotate while airborne
+        {
+            if (move.x > 0)
+            {
+                target = Quaternion.Euler(0, 0, 0);
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10);
+            }
+            else if (move.x < 0)
+            {
+                target = Quaternion.Euler(0, 180, 0);
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 10);
+            }
+        }
+
         if (move.x < 0) // moving left
         {
             if (groundChecker.rearSlopeHit.distance > groundChecker.frontSlopeHit.distance)
@@ -194,11 +196,5 @@ public class PlayerMovement2 : MonoBehaviour
         }
         Vector3 pushDir = new Vector3(hit.moveDirection.x, hit.moveDirection.y, 0); //else, push it
         body.velocity = pushDir * pushForce;
-    }
-
-    public IEnumerator StaminaRecharge()
-    {
-        yield return new WaitForSeconds(1.75f);
-        stamina += rechargeRate * Time.deltaTime;
     }
 }

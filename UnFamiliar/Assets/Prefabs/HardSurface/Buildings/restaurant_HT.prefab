@@ -162,7 +162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement2: {fileID: 0}
-  springJumpHeight: 20
+  bigJumpHeight: 0
+  smallJumpHeight: 0
+  jumpNum: 0
 --- !u!1 &6614834667632839410
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +224,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement2: {fileID: 0}
-  springJumpHeight: 20
+  bigJumpHeight: 0
+  smallJumpHeight: 0
+  jumpNum: 0
 --- !u!1 &6614834668295928598
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,4 +286,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement2: {fileID: 0}
-  springJumpHeight: 20
+  bigJumpHeight: 0
+  smallJumpHeight: 0
+  jumpNum: 0

@@ -175,6 +175,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Window03_kw (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00269df6870d8f149b26daa280207e3b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00269df6870d8f149b26daa280207e3b, type: 3}
 --- !u!4 &1920890791361844774 stripped
@@ -275,6 +280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door01_SW
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 196542cefd0aed1449468038450cf489,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 196542cefd0aed1449468038450cf489, type: 3}
 --- !u!4 &5335859863336860994 stripped
@@ -365,6 +375,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Window03_kw
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00269df6870d8f149b26daa280207e3b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00269df6870d8f149b26daa280207e3b, type: 3}
 --- !u!4 &6073436527827646125 stripped
@@ -454,6 +469,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Window03_kw (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00269df6870d8f149b26daa280207e3b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00269df6870d8f149b26daa280207e3b, type: 3}

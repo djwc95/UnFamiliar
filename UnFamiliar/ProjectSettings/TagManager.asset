@@ -18,6 +18,8 @@ TagManager:
   - BetaControls
   - Rune
   - VideoPlayer
+  - RascalHead
+  - RascalFeet
   layers:
   - Default
   - TransparentFX
@@ -26,7 +28,7 @@ TagManager:
   - Water
   - UI
   - GodRays
-  - 
+  - PostProcess
   - 
   - 
   - 

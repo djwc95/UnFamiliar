@@ -75,7 +75,7 @@ PrefabInstance:
     - target: {fileID: 4116505778095936946, guid: dd091ccbfdf7c6149920bae14bba6c0f,
         type: 3}
       propertyPath: m_Name
-      value: Mushroom01_HT
+      value: Mushroom01_HT Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd091ccbfdf7c6149920bae14bba6c0f, type: 3}

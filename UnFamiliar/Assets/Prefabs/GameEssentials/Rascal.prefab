@@ -2214,11 +2214,13 @@ MonoBehaviour:
   groundChecker: {fileID: 1634692424}
   controller: {fileID: 0}
   verticalVelocity: 0
+  groundedTimer: 0
   baseSpeed: 2
   speed: 0
   jumpHeight: 1.75
   pushForce: 2
   movementLocked: 0
+  canJump: 1
   groundedPlayer: 0
   move: {x: 0, y: 0, z: 0}
   right:
