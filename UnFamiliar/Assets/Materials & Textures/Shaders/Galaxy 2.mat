@@ -44,7 +44,7 @@ Material:
     m_Ints: []
     m_Floats:
     - Vector1_80FFB5D: 17.5
-    - Vector1_B918E844: 0.14
+    - Vector1_B918E844: -1.21
     - Vector1_E24081DB: -3
     - _Noise_Speed: 0.2
     - _QueueControl: 0
