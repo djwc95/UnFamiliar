@@ -46,10 +46,10 @@ Material:
     - Vector1_2D28F683: 0.17
     - Vector1_FDAF1D7D: 1
     - _Depth: 0.38
-    - _Displacement: 0.48
+    - _Displacement: 0.15
     - _Displacement_Animation_Speed: 0.07
     - _Displacement_Scale: 6
-    - _Normal_Animation_Speed: 1.26
+    - _Normal_Animation_Speed: 0.8
     - _Normal_Strength: 0.502
     - _QueueControl: 0
     - _QueueOffset: 0

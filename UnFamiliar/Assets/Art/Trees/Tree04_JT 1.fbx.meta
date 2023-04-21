@@ -3,7 +3,17 @@ guid: 200ffd83e190d5a4394951cee92d8525
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bark.006
+    second: {fileID: 2100000, guid: 3c2fae949c49a6d44b3a1ff8904efb1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Matte
+    second: {fileID: 2100000, guid: 0b22458790b97bb45aaf7692956d9a14, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
