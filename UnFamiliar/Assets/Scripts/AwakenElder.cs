@@ -7,13 +7,17 @@ public class AwakenElder : MonoBehaviour
 {
     public bool canAwaken = false;
     public GameObject cameraToDisable;
+    public CinemachineVirtualCamera newCamera;
     public PlayerMovement2 pm2;
     public Animator elderAnimator;
+    public Animator lightAnimator;
 
+    public RascalAnimations rascalAnimations;
 
     public GameObject rascal;
     public GameObject spiritRascal;
     public Animator particlesExchange;
+    public GameObject particlesToActivate;
     private Vector3 rascalPosition;
 
     public CinemachineImpulseSource screenShake;
@@ -37,10 +41,14 @@ public class AwakenElder : MonoBehaviour
     {
         if (canAwaken && Input.GetKeyDown(KeyCode.E))
         {
-            rascalPosition = rascal.transform.position;
-            cameraToDisable.SetActive(false);
-            pm2.LockMovement();
-            StartCoroutine(StartMoving());
+            if(pm2.move.x == 0)
+            {
+                rascalAnimations.SetIdle();
+                rascalPosition = rascal.transform.position;
+                cameraToDisable.SetActive(false);
+                pm2.LockMovement();
+                StartCoroutine(StartMoving());
+            }
         }
     }
 
@@ -64,9 +72,18 @@ public class AwakenElder : MonoBehaviour
     IEnumerator SoulExchange()
     {
         yield return new WaitForSeconds(4f);
+        particlesToActivate.SetActive(true);
         particlesExchange.SetTrigger("Exchange");
         yield return new WaitForSeconds(6.3f);
+        lightAnimator.SetTrigger("Play");
+        yield return new WaitForSeconds(1.75f);
         Destroy(rascal);
+        particlesToActivate.SetActive(false);
         Instantiate(spiritRascal, rascalPosition, Quaternion.identity);
+        yield return new WaitForSeconds(1);
+        newCamera.Priority = 100;
+        newCamera.LookAt = GameObject.FindGameObjectWithTag("Player").transform;
+        newCamera.Follow = GameObject.FindGameObjectWithTag("Player").transform;
+
     }
 }
