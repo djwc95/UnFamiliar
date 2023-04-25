@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: 6268294171609217311}
-  - {fileID: 981075947976744741}
   - {fileID: 6162831244066175054}
   - {fileID: 3184238371766850073}
   - {fileID: 801539115842543570}
@@ -37,46 +36,6 @@ MonoBehaviour:
   intensity:
     m_OverrideState: 1
     m_Value: 0.26
---- !u!114 &981075947976744741
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdfbdbb87d3286943a057f7791b43141, type: 3}
-  m_Name: ChannelMixer
-  m_EditorClassIdentifier: 
-  active: 0
-  redOutRedIn:
-    m_OverrideState: 1
-    m_Value: -200
-  redOutGreenIn:
-    m_OverrideState: 1
-    m_Value: 132
-  redOutBlueIn:
-    m_OverrideState: 1
-    m_Value: 0
-  greenOutRedIn:
-    m_OverrideState: 0
-    m_Value: 0
-  greenOutGreenIn:
-    m_OverrideState: 0
-    m_Value: 100
-  greenOutBlueIn:
-    m_OverrideState: 0
-    m_Value: 0
-  blueOutRedIn:
-    m_OverrideState: 0
-    m_Value: 0
-  blueOutGreenIn:
-    m_OverrideState: 0
-    m_Value: 0
-  blueOutBlueIn:
-    m_OverrideState: 0
-    m_Value: 100
 --- !u!114 &2354815004493761152
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -151,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   color:
     m_OverrideState: 1
     m_Value: {r: 0, g: 0, b: 0, a: 1}
@@ -179,10 +138,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   postExposure:
     m_OverrideState: 1
-    m_Value: 4.12
+    m_Value: 0.9
   contrast:
     m_OverrideState: 1
     m_Value: -10
@@ -213,7 +172,7 @@ MonoBehaviour:
     m_Value: 1.09
   intensity:
     m_OverrideState: 1
-    m_Value: 0.51
+    m_Value: 1.5
   scatter:
     m_OverrideState: 1
     m_Value: 0.922
@@ -251,10 +210,10 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {r: 0.18801177, g: 0.4399796, b: 0.6132076, a: 1}
+    m_Value: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
   highlights:
     m_OverrideState: 1
-    m_Value: {r: 0.8679245, g: 0.64240485, b: 0.26610893, a: 1}
+    m_Value: {r: 0.34901962, g: 0.28235295, b: 0.2509804, a: 1}
   balance:
     m_OverrideState: 1
     m_Value: 10.2

@@ -44,14 +44,14 @@ Material:
     m_Ints: []
     m_Floats:
     - Vector1_80FFB5D: 17.5
-    - Vector1_B918E844: -1.21
+    - Vector1_B918E844: -0.25
     - Vector1_E24081DB: -3
     - _Noise_Speed: 0.2
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - Color_B76D42B8: {r: 0, g: 1.5579579, b: 5.656854, a: 1}
-    - Vector3_AFF42180: {r: 0.1, g: 0.1, b: 0.1, a: 0}
+    - Vector3_AFF42180: {r: 1, g: 1, b: 1, a: 0}
     - _Galaxy_Color: {r: 0.059184756, g: 0.09433961, b: 0.068133265, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &7945589273776236068

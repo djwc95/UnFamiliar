@@ -30,6 +30,14 @@ public class RascalAnimations : MonoBehaviour
         rascalAnimator.SetBool("walking", false); //set us to idle by default
         rascalAnimator.SetBool("running", false);
     }
+
+    public void SetIdle()
+    {
+        rascalAnimator.SetBool("walking", false);
+        rascalAnimator.SetBool("running", false);
+        IdleRoll(); //roll to see which idle animation we play
+    }
+
     public void Update()
     {
         LockedCheck();
@@ -140,12 +148,5 @@ public class RascalAnimations : MonoBehaviour
             rascalAnimator.SetBool("grounded", true);
             rascalAnimator.SetBool("jump", false);
         }
-    }
-
-    public void SetIdle()
-    {
-        rascalAnimator.SetBool("walking", false);
-        rascalAnimator.SetBool("running", false);
-        IdleRoll(); //roll to see which idle animation we play
     }
 }
