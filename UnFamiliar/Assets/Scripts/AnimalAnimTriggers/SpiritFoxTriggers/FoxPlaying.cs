@@ -21,7 +21,6 @@ public class FoxPlaying : MonoBehaviour
     IEnumerator LockPlayer()
     {
         //pm2.move.x = 0;
-        pm2.verticalVelocity -= pm2.gravity * Time.deltaTime;
         pm2.LockMovement();
         moveAtoB.Move();
         yield return new WaitForSeconds(3.25f);

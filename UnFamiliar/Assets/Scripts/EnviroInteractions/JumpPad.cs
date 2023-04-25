@@ -9,6 +9,10 @@ public class JumpPad : MonoBehaviour
     public float smallJumpHeight;
     public int jumpNum = 0;
 
+    public AudioSource audioSource;
+    public AudioClip lowSound;
+    public AudioClip highSound;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == ("Player"))
@@ -16,12 +20,16 @@ public class JumpPad : MonoBehaviour
             jumpNum++;
             if (jumpNum < 3)
             {
+                audioSource.clip = lowSound; //play sound
+                audioSource.Play();
                 playerMovement2.canJump = false;
                 playerMovement2.verticalVelocity = smallJumpHeight; // increase the player's y position in the movement script by the value we set in unity
                 StartCoroutine(JumpCool());
             }
             else if (jumpNum >= 3)
             {
+                audioSource.clip = highSound; //play sound
+                audioSource.Play();
                 playerMovement2.canJump = false;
                 playerMovement2.verticalVelocity = bigJumpHeight; // increase the player's y position in the movement script by the value we set in unity
                 StartCoroutine(JumpCool());
