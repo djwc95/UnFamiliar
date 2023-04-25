@@ -8,17 +8,6 @@ public class FoxPlaying : MonoBehaviour
     public PlayerMovement2 pm2;
     public MoveAtoB moveAtoB;
     public MoveAtoB moveInReverse;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -41,5 +30,4 @@ public class FoxPlaying : MonoBehaviour
         Destroy(this.gameObject);
         pm2.UnLockMovement();
     }
-
 }

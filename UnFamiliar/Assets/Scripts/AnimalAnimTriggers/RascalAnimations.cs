@@ -112,11 +112,6 @@ public class RascalAnimations : MonoBehaviour
             runSmooth = runSmoothFull;
         }
     }
-    
-    public void TurnCheck()
-    {
-        
-    }
 
     public void IdleRoll()
     {
