@@ -45,4 +45,10 @@ public class MoveAtoB : MonoBehaviour
         stayStill= false;
         moveToB = true;
     }
+
+    public void StopMoving()
+    {
+        stayStill=true;
+        moveToB= false;
+    }
 }
