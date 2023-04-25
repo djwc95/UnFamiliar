@@ -2212,14 +2212,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundChecker: {fileID: 1634692424}
-  rascalAnimations: {fileID: 7551195033591937899}
   controller: {fileID: 0}
   verticalVelocity: 0
   groundedTimer: 0
   baseSpeed: 2
   speed: 0
   jumpHeight: 1.75
-  gravity: 9.8
   pushForce: 2
   movementLocked: 0
   canJump: 1
@@ -2238,6 +2236,8 @@ MonoBehaviour:
       z: 0
       w: -0.00000004371139
   rotationSpeed: 1000
+  stamina: 50
+  staminaBar: {fileID: 0}
   carModel: {fileID: 7208664526447135128}
   raycastPoint: {fileID: 1633334113}
   xDirect: 0
