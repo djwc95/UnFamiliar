@@ -8,17 +8,6 @@ public class FoxPlaying : MonoBehaviour
     public PlayerMovement2 pm2;
     public MoveAtoB moveAtoB;
     public MoveAtoB moveInReverse;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -31,15 +20,16 @@ public class FoxPlaying : MonoBehaviour
     
     IEnumerator LockPlayer()
     {
+        //pm2.move.x = 0;
+        pm2.verticalVelocity -= pm2.gravity * Time.deltaTime;
         pm2.LockMovement();
         moveAtoB.Move();
         yield return new WaitForSeconds(3.25f);
         moveAtoB.StopMoving();
-        yield return new WaitForSeconds(5.9f);
+        yield return new WaitForSeconds(6f);
         moveInReverse.Move();
-        yield return new WaitForSeconds(2.25f);
+        yield return new WaitForSeconds(2.5f);
         Destroy(this.gameObject);
         pm2.UnLockMovement();
     }
-
 }

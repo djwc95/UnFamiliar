@@ -92,7 +92,7 @@ AnimatorStateMachine:
     m_Position: {x: 590, y: -80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1729829908551392995}
-    m_Position: {x: 577.05493, y: 144.92578, z: 0}
+    m_Position: {x: 580, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8833968229252465991}
     m_Position: {x: 622.5708, y: 254.04642, z: 0}
@@ -185,6 +185,12 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: Play
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Spotted
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
