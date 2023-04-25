@@ -18,7 +18,7 @@ public class PlayerMovement2 : MonoBehaviour
     public float baseSpeed;
     public float speed;
     public float jumpHeight = 1.75f;
-    private float gravity = 9.8f;
+    public float gravity = 9.8f;
     public float pushForce = 2f;
     
     public bool movementLocked;
@@ -48,7 +48,9 @@ public class PlayerMovement2 : MonoBehaviour
 
     public void LockMovement()
     {
+        move.x = 0;
         movementLocked = true;
+        rascalAnimations.SetIdle();
     }
 
     public void UnLockMovement()
