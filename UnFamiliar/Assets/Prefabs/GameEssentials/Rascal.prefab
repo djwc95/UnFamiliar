@@ -2020,6 +2020,7 @@ GameObject:
   - component: {fileID: 543450652494419749}
   - component: {fileID: 543450652494419755}
   - component: {fileID: 1634692424}
+  - component: {fileID: 4658926367039442074}
   m_Layer: 3
   m_Name: Rascal
   m_TagString: Player
@@ -2212,6 +2213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundChecker: {fileID: 1634692424}
+  rascalAnimations: {fileID: 0}
   controller: {fileID: 0}
   verticalVelocity: 0
   groundedTimer: 0
@@ -2236,8 +2238,6 @@ MonoBehaviour:
       z: 0
       w: -0.00000004371139
   rotationSpeed: 1000
-  stamina: 50
-  staminaBar: {fileID: 0}
   carModel: {fileID: 7208664526447135128}
   raycastPoint: {fileID: 1633334113}
   xDirect: 0
@@ -2355,6 +2355,14 @@ MonoBehaviour:
   raycastLength: 5
   rayOriginOffset1: {x: -0.2, y: 0, z: 0}
   rayOriginOffset2: {x: 0.2, y: 0, z: 0}
+--- !u!81 &4658926367039442074
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7208664526447135128}
+  m_Enabled: 1
 --- !u!1 &7408907496153895868
 GameObject:
   m_ObjectHideFlags: 0
