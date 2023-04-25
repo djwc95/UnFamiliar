@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,9 +6,12 @@ using UnityEngine;
 public class PlayCutscene : MonoBehaviour
 {
     public GameObject videoCanvas;
+    public GameObject cutscene;
     public int videoLength;
     public Loading loading;
     public int levelToLoad;
+    public CanvasGroup canvasGroup;
+    public float fadeTime = 1.0f;
 
     private void Start()
     {
@@ -18,6 +22,8 @@ public class PlayCutscene : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             videoCanvas.SetActive(true);
+            cutscene.SetActive(true);
+            StartCoroutine(FadeIn());
             StartCoroutine(VideoPlay());
         }
     }
@@ -28,5 +34,15 @@ public class PlayCutscene : MonoBehaviour
         videoCanvas.SetActive(false);
         loading.LoadScene(levelToLoad);
         Debug.Log("called to script");
+    }
+
+    private IEnumerator FadeIn()
+    {
+        while (canvasGroup.alpha < 1)
+        {
+            canvasGroup.alpha += Time.deltaTime / fadeTime;
+            yield return null;
+        }
+        yield return null;
     }
 }

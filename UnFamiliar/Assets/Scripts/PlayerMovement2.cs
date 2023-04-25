@@ -116,7 +116,10 @@ public class PlayerMovement2 : MonoBehaviour
         //============================ Sprinting and Stamina ==============================
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 3.75f; //sprint button
+            if (groundedPlayer)
+            {
+                speed = 3.75f; //sprint button
+            }
         }
         else
         {
