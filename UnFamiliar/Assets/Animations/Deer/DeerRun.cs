@@ -14,8 +14,14 @@ public class DeerRun : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             DeerAnimator.SetTrigger("DeerScare");
-            
+            moveAtoB.Move();
+            StartCoroutine(DestroyOverTime());
         }
+    }
+    IEnumerator DestroyOverTime()
+    {
+        yield return new WaitForSeconds(6);
+        Destroy(this.gameObject);
     }
     
     
