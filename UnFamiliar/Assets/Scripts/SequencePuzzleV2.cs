@@ -40,6 +40,7 @@ public class SequencePuzzleV2 : MonoBehaviour
 
     public AudioClip failSound;
     public AudioClip passSound;
+    public AudioClip stoneDragging;
     public AudioSource audioSource;
 
     private bool canWin = true;
@@ -64,7 +65,7 @@ public class SequencePuzzleV2 : MonoBehaviour
         {
             StartCoroutine(ResetRunes());
             openGate.Shake();
-            audioSource.PlayOneShot(failSound);
+            audioSource.PlayOneShot(failSound, 0.7f);
             buttonsPushed = 0;
             currentSequence.Clear();
         }
@@ -188,7 +189,9 @@ public class SequencePuzzleV2 : MonoBehaviour
         {
             gate.Play("OpenGate", 0, 0f);
             openGate.Shake();
-            audioSource.PlayOneShot(passSound);
+            audioSource.PlayOneShot(passSound, 0.7f);
+            audioSource.clip = stoneDragging;
+            audioSource.Play();
         }
     }
 }
