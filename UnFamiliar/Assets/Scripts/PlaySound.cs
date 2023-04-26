@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MerryGo: MonoBehaviour
+public class PlaySound: MonoBehaviour
 {
     public AudioSource playSound;
 
