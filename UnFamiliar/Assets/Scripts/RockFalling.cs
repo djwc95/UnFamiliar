@@ -5,13 +5,27 @@ using UnityEngine;
 public class RockFalling : MonoBehaviour
 {
     public AudioSource playSound;
+private bool Canplay = false;
 
      void OnTriggerEnter(Collider other) {
-
-
-        if(Input.GetKeyDown(KeyCode.E)){
-        playSound.Play();
+        Canplay = true;
         
+
+      
+       
+        
+    }
+    private void OnTriggerExit(Collider other) {
+        Canplay = false;
+
+        
+    }
+    private void Update() {
+        if((Canplay)){
+             if(Input.GetKeyDown(KeyCode.E)){
+
+        playSound.Play();
+        }
     }
 }
 }
