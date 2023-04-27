@@ -1,0 +1,2279 @@
+fileFormatVersion: 2
+guid: 3ca23d05c1649774f88063951d6eda8a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tailWag_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2956
+        width: 131
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876ac705a67e9bf4095cf04daea819fc
+      internalID: 1561265016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2953
+        width: 136
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49726551d702d344f9d8e3d2920262d5
+      internalID: -514751653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_2
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2950
+        width: 134
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c639e0dc53b01464ea036b73e8d78d4a
+      internalID: -1520662575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_3
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 2947
+        width: 130
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eabbd63f1cb91a46bad3765dc9118c1
+      internalID: 89958185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_4
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 2944
+        width: 129
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3c84f9dd0f51845a20db235f494d90
+      internalID: 213845789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_5
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 2943
+        width: 126
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4bb42e569deab49a1e24fb954f3e8f
+      internalID: -1388790080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_6
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 2941
+        width: 124
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b5c4f008fb11848aee355dbd6b4bb6
+      internalID: 1418465091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_7
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 2940
+        width: 231
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c91b4432b87e64cade876b346b8812
+      internalID: -300532962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2727
+        width: 123
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe9d9098c99b804787f40a21b923f2c
+      internalID: -962402488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_9
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 2506
+        width: 85
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d19aebe5a6e0341ba03d0640af9327
+      internalID: 707364885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_10
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2727
+        width: 122
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9547aaeda53bd498c23479ecbdcb7d
+      internalID: -1002294818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_11
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 2506
+        width: 80
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1b179088d26174c8d8457966b24db4
+      internalID: -1622833537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_12
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 2728
+        width: 120
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4792625d05836414286694dbaacdf7d9
+      internalID: -380472636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_13
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 2506
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b6fa50b504ec8438658a576e3bfc02
+      internalID: 239400280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_14
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 2726
+        width: 113
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb90b121f514d149b556b6cd956b5bf
+      internalID: -1860062075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_15
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 2082
+        width: 123
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdad091f939e654408db48eb373a8cdf
+      internalID: 2000674697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_16
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 2724
+        width: 107
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3121a2f8e97724bbdb4e8b6fc309cd
+      internalID: 1285859245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_17
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 2084
+        width: 122
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502858bf4e286824f9cdc606eb2fc8fc
+      internalID: 2117781336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_18
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 2722
+        width: 101
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf1c0da29c314049a28ef99e08b9a84
+      internalID: -978674647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_19
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 2289
+        width: 85
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36338d6acadb11d44b63da0891b4f10b
+      internalID: 997992902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_20
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 2721
+        width: 95
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b037a4cec9f4944830adf7b1bc72d4
+      internalID: -1481631275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_21
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 2289
+        width: 82
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c624320d91931fd4e978d348b66a0946
+      internalID: 1026858712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_22
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 2720
+        width: 89
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbd7ece4b00be149848a888f03bdc03
+      internalID: -1178089424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_23
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 2289
+        width: 86
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4766de469c68e4b4da9eb69b2e1800b9
+      internalID: -638619146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1885
+        width: 219
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076d65622a91cdb4da2a9d6a4f371385
+      internalID: -326067473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_25
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 2078
+        width: 87
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60133fd9831074741a0b6b4f0e3448ee
+      internalID: -1328774221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_26
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1889
+        width: 134
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07eb4106341c55747bd6d2945dc2842a
+      internalID: -1682277579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_27
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 2079
+        width: 94
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7551e6e5619a5d4b8dd017b3a4feebe
+      internalID: 1385775480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_28
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1894
+        width: 139
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d389f1cd1b9e3947a48f1dda7f685be
+      internalID: 817860102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_29
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 2080
+        width: 98
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6a8d263a65a1f47867b8b44cbe7fdc
+      internalID: -326446184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_30
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1898
+        width: 143
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65706bb1345696e498ae8ea1193bb0e5
+      internalID: 1988442913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_31
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1902
+        width: 146
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a9d1d86e1d5174d856af957a7193ac
+      internalID: 1635145663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_32
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 1908
+        width: 150
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255ef0bab4902454d951a73fd6d234ad
+      internalID: -976537763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_33
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 2087
+        width: 114
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07e26b81c256fc48b94e1de6d7ab6af
+      internalID: 1601895584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_34
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1913
+        width: 153
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8afe6d47997f4f409239d64328a8044
+      internalID: -1041990937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_35
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 2090
+        width: 119
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1e9a9215862654bb025c3484be99ce
+      internalID: -1707796290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_36
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1918
+        width: 148
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee68c7e6f7fbaf4583e4fdef4b94bc9
+      internalID: 431465649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_37
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 2093
+        width: 125
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37d6461ed6a3004ba3a440bfa8ba504
+      internalID: 1608702852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_38
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1699
+        width: 151
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b34d32c82cbf14f9bab18901718a3b
+      internalID: 1435410350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_39
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1692
+        width: 147
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18df26b114af45548b07010e703cd66d
+      internalID: 1016294419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_40
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1685
+        width: 141
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdc79a408dffcb4eaf497e2e0609463
+      internalID: 483704252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_41
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1678
+        width: 135
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39278a3b46778eb4c926906be0db1825
+      internalID: -1080463903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_42
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1672
+        width: 128
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd05f75d97b5b24581aec52b2fad563
+      internalID: 1394227736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_43
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 1667
+        width: 120
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbb35cc3427c9040b4e32d2700b3571
+      internalID: 1843814913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_44
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1663
+        width: 112
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b79bd639be34549b1e254d02ba7777
+      internalID: 832855681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_45
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1659
+        width: 105
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648c34fccb00522428dff427c661b341
+      internalID: 1588944388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_46
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1030
+        width: 92
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5136f12e44d4f414ea0a86e4b0bed99a
+      internalID: -1725674376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_47
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1444
+        width: 97
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a67b13aa112e6458424b020b3f20e0
+      internalID: 1489049471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_48
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1031
+        width: 95
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5971469a1281888409b84505bc7ec687
+      internalID: 1894977963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_49
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1443
+        width: 91
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a30bc96f0ee6914b8b3a3e1740412ec
+      internalID: 186839349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_50
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1034
+        width: 101
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b161d89edcb3be54f8217e694cc86cb8
+      internalID: 1742176613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_51
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1441
+        width: 86
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9a19ea8f80e2b4789c0719a4db6a38
+      internalID: 1009775088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_52
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1036
+        width: 103
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9f06ca9910d9040b3132ffbd3634f7
+      internalID: -1243900713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_53
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1441
+        width: 83
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4316511eaa2d8642b06b27ca8fa4bb0
+      internalID: -1969246318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_54
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1039
+        width: 125
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9866ce8ae396c9240b79ce8e228b24ee
+      internalID: -1413064879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_55
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 1042
+        width: 127
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed7f23b39f07c94a83ad2ce73b7e8d1
+      internalID: 403773248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_56
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1045
+        width: 129
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ed5b6a8de0408489d4339fa7569429
+      internalID: 2080889286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_57
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 1239
+        width: 90
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870c769fb6c4bcb4f974d364783c06f4
+      internalID: 652296879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_58
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1048
+        width: 113
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeacc675d01241b42b2a78293d4e11ee
+      internalID: -256228646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_59
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 840
+        width: 116
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669e4e191beb4f84683e533b88a1c341
+      internalID: -1079527911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_60
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 843
+        width: 120
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2892aa2f281306438d5a7f7633c5b38
+      internalID: -1741066092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_61
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 847
+        width: 124
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28bd72cbeff57fc44a2b03acc1f08b43
+      internalID: 1673812972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_62
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 851
+        width: 129
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1696458d9191e6b468a5661db308435c
+      internalID: -817261887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_63
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 854
+        width: 133
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1355e1036ca2b74292ecf6cc8cad2dd
+      internalID: -258391889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_64
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 851
+        width: 131
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b307f6d95ac2214a9e1c33519a47c82
+      internalID: 1970882136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_65
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 847
+        width: 129
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7edec4f436f000548b7f3843b71ae155
+      internalID: 1212915131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_66
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 842
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377c3497436828e42a14fab3b94f38ae
+      internalID: 1893087994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_67
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 627
+        width: 126
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a579860c3d617c4cafa5e705eaa09e3
+      internalID: 1867170347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_68
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 622
+        width: 123
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b8c1e6533597941ad80817a531dc9b
+      internalID: -1848037146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_69
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 619
+        width: 122
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efae391163b1bc45b1efd9a6414766a
+      internalID: 1736953636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_70
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 616
+        width: 119
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139ad06558b19764ea75c594ef0dfcc1
+      internalID: 1473945792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_71
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 613
+        width: 115
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2b31e79bc21184bb369e24aed52bf1
+      internalID: 852317132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_72
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 612
+        width: 111
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13983778bfdb1e042b7d9bbe00ce0b00
+      internalID: -1082827828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_73
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 608
+        width: 109
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b6fe5d354b286439161334d3139a21
+      internalID: 1635258806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_74
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 608
+        width: 108
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173ec09e2a9d0384d82ff6ca79f0efbf
+      internalID: 660902417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_75
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 394
+        width: 105
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5079930efd22b47bcaf11970fa0a4e
+      internalID: -923791440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_76
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 396
+        width: 107
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad11937a63185646bbc9f5974d262fe
+      internalID: 468468251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_77
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 398
+        width: 111
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81f9b204ddc9a041858f9354482fa23
+      internalID: 63383675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_78
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 400
+        width: 114
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6afa0bbc29c82a4f9f85604ba373be7
+      internalID: 1913867655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_79
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 402
+        width: 117
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d003dad503c87de4794cc6421a362301
+      internalID: 173875851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_80
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 404
+        width: 120
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4761c7cd97952a74bb29b1f5bee0adb1
+      internalID: 1942777649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_81
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 406
+        width: 125
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde4719aaf8f6604b8bd71070b3eb922
+      internalID: -1529632714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_82
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 409
+        width: 126
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90239d567402a04597844b6685d8e6c
+      internalID: 1185698717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_83
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 198
+        width: 128
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdda00aaea9e7a0458ac36fef741eae1
+      internalID: -1453120916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_84
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 201
+        width: 131
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c41adb164df43e41b00c2f171faf2b2
+      internalID: -1551252679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_85
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 203
+        width: 133
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640cb0ae2ebf8c74293bd94b843e4abf
+      internalID: -1606550178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_86
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 206
+        width: 139
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266d589030d7af242af24f0733b1a761
+      internalID: 819218792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_87
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 208
+        width: 139
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2b0aee64c01e44d98f6725f000f6c8
+      internalID: -586658374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_88
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 207
+        width: 140
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bede7964a003ae4c90adf80890c7322
+      internalID: 826191453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_89
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 207
+        width: 139
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031670c463588b042a022f9f6736dc69
+      internalID: 565264714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_90
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 0
+        width: 243
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c6bea0e93c7574295ea817cdad06c3
+      internalID: -893840403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 132
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e9a32e364cb2a4c8dd4de2f257522e
+      internalID: -25195948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_92
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 135
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6081573dacf06b042bd79b453341b1ed
+      internalID: -1252841347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_93
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 0
+        width: 136
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c1895cdad4dda4ba14970f3a41cbd7
+      internalID: 123228252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_94
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 0
+        width: 134
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712fccffa979f7041846ee06b96d2dec
+      internalID: 1071240151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_95
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 0
+        width: 134
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4959c66fe459ba4aac81fd6163be017
+      internalID: -1076229768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_96
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 0
+        width: 134
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0f8d1babf7a7a44a6b76eba9c598b5
+      internalID: -1300608091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailWag_97
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 0
+        width: 133
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e355ed40fcff648a0ec884d2a2971c
+      internalID: -676217875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e6b668a4d19e6714496d5ac6c57b2ae3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tailWag_45: 1588944388
+      tailWag_57: 652296879
+      tailWag_51: 1009775088
+      tailWag_11: -1622833537
+      tailWag_58: -256228646
+      tailWag_28: 817860102
+      tailWag_83: -1453120916
+      tailWag_70: 1473945792
+      tailWag_14: -1860062075
+      tailWag_20: -1481631275
+      tailWag_90: -893840403
+      tailWag_43: 1843814913
+      tailWag_95: -1076229768
+      tailWag_93: 123228252
+      tailWag_29: -326446184
+      tailWag_31: 1635145663
+      tailWag_26: -1682277579
+      tailWag_89: 565264714
+      tailWag_65: 1212915131
+      tailWag_5: -1388790080
+      tailWag_47: 1489049471
+      tailWag_37: 1608702852
+      tailWag_69: 1736953636
+      tailWag_8: -962402488
+      tailWag_76: 468468251
+      tailWag_21: 1026858712
+      tailWag_22: -1178089424
+      tailWag_71: 852317132
+      tailWag_36: 431465649
+      tailWag_44: 832855681
+      tailWag_91: -25195948
+      tailWag_30: 1988442913
+      tailWag_0: 1561265016
+      tailWag_67: 1867170347
+      tailWag_53: -1969246318
+      tailWag_61: 1673812972
+      tailWag_56: 2080889286
+      tailWag_27: 1385775480
+      tailWag_50: 1742176613
+      tailWag_78: 1913867655
+      tailWag_19: 997992902
+      tailWag_6: 1418465091
+      tailWag_40: 483704252
+      tailWag_96: -1300608091
+      tailWag_13: 239400280
+      tailWag_33: 1601895584
+      tailWag_77: 63383675
+      tailWag_87: -586658374
+      tailWag_39: 1016294419
+      tailWag_12: -380472636
+      tailWag_25: -1328774221
+      tailWag_35: -1707796290
+      tailWag_73: 1635258806
+      tailWag_32: -976537763
+      tailWag_38: 1435410350
+      tailWag_46: -1725674376
+      tailWag_7: -300532962
+      tailWag_15: 2000674697
+      tailWag_64: 1970882136
+      tailWag_92: -1252841347
+      tailWag_23: -638619146
+      tailWag_68: -1848037146
+      tailWag_41: -1080463903
+      tailWag_34: -1041990937
+      tailWag_48: 1894977963
+      tailWag_86: 819218792
+      tailWag_81: -1529632714
+      tailWag_94: 1071240151
+      tailWag_10: -1002294818
+      tailWag_3: 89958185
+      tailWag_55: 403773248
+      tailWag_84: -1551252679
+      tailWag_66: 1893087994
+      tailWag_52: -1243900713
+      tailWag_18: -978674647
+      tailWag_17: 2117781336
+      tailWag_59: -1079527911
+      tailWag_42: 1394227736
+      tailWag_2: -1520662575
+      tailWag_49: 186839349
+      tailWag_63: -258391889
+      tailWag_1: -514751653
+      tailWag_16: 1285859245
+      tailWag_74: 660902417
+      tailWag_60: -1741066092
+      tailWag_24: -326067473
+      tailWag_79: 173875851
+      tailWag_85: -1606550178
+      tailWag_82: 1185698717
+      tailWag_4: 213845789
+      tailWag_80: 1942777649
+      tailWag_72: -1082827828
+      tailWag_88: 826191453
+      tailWag_54: -1413064879
+      tailWag_62: -817261887
+      tailWag_75: -923791440
+      tailWag_97: -676217875
+      tailWag_9: 707364885
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
