@@ -137,7 +137,7 @@ public class PlayerMovement2 : MonoBehaviour
 
         if (!groundedPlayer) // how we rotate while airborne
         {
-            speed = baseSpeed * 1.75f; //slightly better air control
+            //speed = baseSpeed * 1.75f; //slightly better air control
 
             if (move.x > 0)
             {

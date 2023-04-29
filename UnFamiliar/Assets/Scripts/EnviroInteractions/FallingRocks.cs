@@ -41,7 +41,6 @@ public class FallingRocks : MonoBehaviour
         screenShake.GenerateImpulse();
         yield return new WaitForSeconds(.25f);
         screenShake.GenerateImpulse();
-        yield return new WaitForSeconds(1.25f);
         pm2.UnLockMovement();
     }
 

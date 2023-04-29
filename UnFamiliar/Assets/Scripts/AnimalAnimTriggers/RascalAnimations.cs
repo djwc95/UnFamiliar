@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -21,6 +22,10 @@ public class RascalAnimations : MonoBehaviour
 
     private float runSmooth = 0.25f;
     private float runSmoothFull = 0.25f;
+
+    public AudioClip[] footstep;
+    private AudioClip footstepClip;
+    public AudioSource audioSource;
 
     private void Start()
     {
@@ -144,4 +149,13 @@ public class RascalAnimations : MonoBehaviour
             rascalAnimator.SetBool("jump", false);
         }
     }
+
+    public void PlayFootstep()
+    {
+        int index = UnityEngine.Random.Range(0, footstep.Length);
+        footstepClip = footstep[index];
+        audioSource.clip = footstepClip;
+        audioSource.Play();
+    }
+
 }
