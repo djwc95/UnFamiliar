@@ -2898,11 +2898,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8016832422675419938}
     m_Modifications:
-    - target: {fileID: 5131028538528548269, guid: f4de97bf8d2016843a296004ba0f66f4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5131028538892692040, guid: f4de97bf8d2016843a296004ba0f66f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -2962,16 +2957,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RainFall
-      objectReference: {fileID: 0}
-    - target: {fileID: 5131028538892692043, guid: f4de97bf8d2016843a296004ba0f66f4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5131028538892692043, guid: f4de97bf8d2016843a296004ba0f66f4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4de97bf8d2016843a296004ba0f66f4, type: 3}
