@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeerRun : MonoBehaviour
+public class BirdBath : MonoBehaviour
 {
-    public Animator DeerAnimator;
+    public Animator BirdBathing;
     //public PlayerMovement2 pm2;
     public MoveAtoB moveAtoB;
     public float waitTime = 1.25f;
@@ -14,8 +14,8 @@ public class DeerRun : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            StartCoroutine(SpookDeer());
-            DeerAnimator.SetTrigger("Spook");
+            StartCoroutine(SpookBird());
+            BirdBathing.SetTrigger("Spook");
         }
     }
     IEnumerator DestroyOverTime()
@@ -24,7 +24,7 @@ public class DeerRun : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    IEnumerator SpookDeer()
+    IEnumerator SpookBird()
     {
         yield return new WaitForSeconds(waitTime);
         moveAtoB.Move();
