@@ -168,7 +168,7 @@ public class SequencePuzzleV2 : MonoBehaviour
 
     public IEnumerator ResetRunes()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.3f);
         Destroy(destroyRune1);
         Destroy(destroyRune2);
         Destroy(destroyRune3);

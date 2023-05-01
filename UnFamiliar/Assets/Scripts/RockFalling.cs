@@ -30,5 +30,7 @@ public class RockFalling : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         playSound.Play();
+        yield return new WaitForSeconds(4);
+        playSound.Stop();
     }
 }
