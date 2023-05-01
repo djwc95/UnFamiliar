@@ -12,10 +12,6 @@ public class SequencePuzzleV2 : MonoBehaviour
     public List<int> correctSequence = new List<int>();
     public List<int> currentSequence = new();
 
-    public GameObject switch1;
-    public GameObject switch2;
-    public GameObject switch3;
-
     public Transform position1;
     public Transform position2;
     public Transform position3;
@@ -41,6 +37,7 @@ public class SequencePuzzleV2 : MonoBehaviour
     public AudioClip failSound;
     public AudioClip passSound;
     public AudioClip stoneDragging;
+    public AudioClip chime;
     public AudioSource audioSource;
 
     private bool canWin = true;
@@ -74,6 +71,7 @@ public class SequencePuzzleV2 : MonoBehaviour
     public void Button1()
     {
         currentSequence.Add(1); //just the num that corresponds with symbol (left to right in unity panel)
+        audioSource.PlayOneShot(chime, 0.4f);
         buttonsPushed++;
 
         if (buttonsPushed == 1)
@@ -106,30 +104,32 @@ public class SequencePuzzleV2 : MonoBehaviour
     public void Button2()
     {
         currentSequence.Add(2); //just the num that corresponds with symbol (left to right in unity panel)
+        audioSource.PlayOneShot(chime, 0.4f);
         buttonsPushed++;
+        var RPositionOffset = new Vector3(0,0, 0.5f);
         if (buttonsPushed == 1)
         {
-            destroyRune1 = Instantiate(rune2, position1.position, position1.rotation);
+            destroyRune1 = Instantiate(rune2, position1.position - RPositionOffset, position1.rotation);
             destroyParticles1 = Instantiate(particles, position1.position, position1.rotation);
         }
         else if (buttonsPushed == 2)
         {
-            destroyRune2 = Instantiate(rune2, position2.position, position2.rotation);
+            destroyRune2 = Instantiate(rune2, position2.position - RPositionOffset, position2.rotation);
             destroyParticles2 = Instantiate(particles, position2.position, position2.rotation);
         }
         else if (buttonsPushed == 3)
         {
-            destroyRune3 = Instantiate(rune2, position3.position, position3.rotation);
+            destroyRune3 = Instantiate(rune2, position3.position - RPositionOffset, position3.rotation);
             destroyParticles3 = Instantiate(particles, position3.position, position3.rotation);
         }
         else if (buttonsPushed == 4)
         {
-           destroyRune4 = Instantiate(rune2, position4.position, position4.rotation);
+           destroyRune4 = Instantiate(rune2, position4.position - RPositionOffset, position4.rotation);
            destroyParticles4 = Instantiate(particles, position4.position, position4.rotation);
         }
         else if (buttonsPushed == 5)
         {
-            destroyRune5 = Instantiate(rune2, position5.position, position5.rotation);
+            destroyRune5 = Instantiate(rune2, position5.position - RPositionOffset, position5.rotation);
             destroyParticles5 = Instantiate(particles, position5.position, position5.rotation);
         }
     }
@@ -137,6 +137,7 @@ public class SequencePuzzleV2 : MonoBehaviour
     public void Button3()
     {
         currentSequence.Add(3); //just the num that corresponds with symbol (left to right in unity panel)
+        audioSource.PlayOneShot(chime, 0.4f);
         buttonsPushed++;
 
         if (buttonsPushed == 1)

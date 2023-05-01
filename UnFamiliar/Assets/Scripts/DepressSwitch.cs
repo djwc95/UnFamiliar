@@ -5,13 +5,17 @@ using UnityEngine;
 public class DepressSwitch : MonoBehaviour
 {
     public Animator switchPress;
+    public AudioSource audioSource;
+    public AudioClip stoneGrind;
+    public AudioClip stoneGrindHi;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             switchPress.SetTrigger("Depress");
-            Debug.Log("pillar depressed");
+            audioSource.clip = stoneGrind;
+            audioSource.Play();
         }
     }
 
@@ -20,7 +24,8 @@ public class DepressSwitch : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             switchPress.SetTrigger("Expand");
-            Debug.Log("pillar expanded");
+            audioSource.clip = stoneGrindHi;
+            audioSource.Play();
         }
     }
 }
