@@ -33,7 +33,6 @@ public class PlayCutscene : MonoBehaviour
         yield return new WaitForSeconds(videoLength);
         videoCanvas.SetActive(false);
         loading.LoadScene(levelToLoad);
-        Debug.Log("called to script");
     }
 
     private IEnumerator FadeIn()
@@ -44,5 +43,17 @@ public class PlayCutscene : MonoBehaviour
             yield return null;
         }
         yield return null;
+    }
+
+    private void Update()
+    {
+        if (videoCanvas.activeInHierarchy)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                videoCanvas.SetActive(false);
+                loading.LoadScene(levelToLoad);
+            }
+        }
     }
 }
