@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeerRun : MonoBehaviour
+public class RatRun : MonoBehaviour
 {
     public Animator DeerAnimator;
     //public PlayerMovement2 pm2;
