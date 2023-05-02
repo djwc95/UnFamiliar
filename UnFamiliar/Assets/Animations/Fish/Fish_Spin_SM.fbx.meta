@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 27fcbe0024c14504eb68e1be4f9b1942
+guid: 09d08b42e0b7cdf4fa0a710805304308
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -15,7 +15,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
-    motionNodeName: Fish
+    motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
-      takeName: Take 001
-      internalID: 1827226128182048838
+      name: Armature.001|Armature.001Action
+      takeName: Armature.001|Armature.001Action
+      internalID: 2264077025236624520
       firstFrame: 0
-      lastFrame: 100
+      lastFrame: 305
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -71,8 +71,8 @@ ModelImporter:
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
