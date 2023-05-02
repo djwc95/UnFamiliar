@@ -18,7 +18,7 @@ public class RandomizeAnimations : MonoBehaviour
 
     private IEnumerator Randomize()
     {
-        waitTime = Random.Range(0f, 4f);
+        waitTime = Random.Range(1f, 4f);
         speed = Random.Range(0.75f, 2.5f);
         var randomRotate = new Vector3(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f));
         yield return new WaitForSeconds(waitTime);
