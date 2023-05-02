@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class NoStepOffset : MonoBehaviour
 {
-    public CharacterController controller;
+    private CharacterController controller;
     public float startValue;
 
     private void Start()
     {
-        //controller = GetComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
         startValue = controller.stepOffset;
     }
     public void OnTriggerEnter(Collider other)

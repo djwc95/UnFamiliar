@@ -39,45 +39,25 @@ public class BirdPeck : MonoBehaviour
 
     IEnumerator WalkBird()
     {
-        if (canMove)
-        {
-            walkMove.Move();
-            Debug.Log("We are Walking");
-            yield return new WaitForSeconds(waitTimeHop);
-            canMove = false;
-
-        }
-        else if (!canMove) 
-        {
-            walkMove.StopMoving();
-            Debug.Log("We have Stopped");
-            yield return new WaitForSeconds(peckTime);
-            canMove = true;
-        }
-
+        BirdPecking.speed = Random.Range(0.4f, 1.6f);
+        walkMove.Move();
+        yield return new WaitForSeconds(waitTimeHop);
+        walkMove.StopMoving();
+        StartCoroutine(WalkBird());
     }
 
     IEnumerator RotateBird()
     {   
-        if (canRotate) 
-        {
-            canRotate = false;
-            transform.Rotate(0, 45, 0);
-            yield return new WaitForSeconds(Random.Range(0.7f,2.5f));
-            canRotate = true;
-
-        }
-
-    }
-    private void Update()
-    {
-        StartCoroutine(WalkBird());
+        transform.Rotate(0, 45, 0);
+        yield return new WaitForSeconds(Random.Range(0.7f,2.25f));
         StartCoroutine(RotateBird());
-        BirdPecking.speed = Random.Range(0.4f, 1.6f);
+
     }
 
     private void Start()
     {
+        StartCoroutine(WalkBird());
+        StartCoroutine(RotateBird());
         canRotate = true;
         canMove = true;
     }

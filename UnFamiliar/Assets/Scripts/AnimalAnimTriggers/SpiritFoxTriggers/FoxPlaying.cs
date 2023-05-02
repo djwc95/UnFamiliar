@@ -24,7 +24,7 @@ public class FoxPlaying : MonoBehaviour
         moveAtoB.Move();
         yield return new WaitForSeconds(3.25f);
         moveAtoB.StopMoving();
-        yield return new WaitForSeconds(5.9f);
+        yield return new WaitForSeconds(5.7f);
         moveInReverse.Move();
         yield return new WaitForSeconds(2.25f);
         Destroy(this.gameObject);
