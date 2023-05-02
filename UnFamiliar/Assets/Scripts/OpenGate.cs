@@ -7,6 +7,7 @@ public class OpenGate : MonoBehaviour
 {
     [SerializeField] private Animator gate = null;
     CinemachineImpulseSource impulse;
+    
 
     private void Start()
     {
@@ -18,6 +19,7 @@ public class OpenGate : MonoBehaviour
         if (other.CompareTag("Weight") || other.CompareTag("Player")) //player or weight object can open gate
         {
             gate.Play("OpenGate", 0, 0f);
+            
         }
     }
 

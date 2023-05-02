@@ -53,13 +53,13 @@ Material:
     - _Normal_Strength: 0.502
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothess: 0.41
+    - _Smoothess: 0
     - _Strength: 0.32
     m_Colors:
     - _Deep_Water_Color: {r: 0, g: 0.53546095, b: 0.6415094, a: 1}
     - _Main_Normal_Tiling: {r: 2, g: 2, b: 0, a: 0}
     - _Secondary_Normal_Tiling_1: {r: 2, g: 2, b: 0, a: 0}
-    - _Shallow_Water_Color: {r: 0, g: 0.3177569, b: 0.5, a: 0.59607846}
+    - _Shallow_Water_Color: {r: 0.028034877, g: 0.42926753, b: 0.6603774, a: 0.59607846}
   m_BuildTextureStacks: []
 --- !u!114 &2152159261516613136
 MonoBehaviour:
