@@ -7,15 +7,15 @@ public class DeerRun : MonoBehaviour
     public Animator DeerAnimator;
     //public PlayerMovement2 pm2;
     public MoveAtoB moveAtoB;
+    public float waitTime = 1.25f;
     //public MoveAtoB moveInReverse;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            DeerAnimator.SetTrigger("DeerScare");
-            moveAtoB.Move();
-            StartCoroutine(DestroyOverTime());
+            StartCoroutine(SpookDeer());
+            DeerAnimator.SetTrigger("Spook");
         }
     }
     IEnumerator DestroyOverTime()
@@ -23,6 +23,11 @@ public class DeerRun : MonoBehaviour
         yield return new WaitForSeconds(6);
         Destroy(this.gameObject);
     }
-    
-    
+
+    IEnumerator SpookDeer()
+    {
+        yield return new WaitForSeconds(waitTime);
+        moveAtoB.Move();
+        StartCoroutine(DestroyOverTime());
+    }
 }
