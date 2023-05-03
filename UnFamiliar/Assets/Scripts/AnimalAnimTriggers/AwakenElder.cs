@@ -12,6 +12,9 @@ public class AwakenElder : MonoBehaviour
     public Animator elderAnimator;
     public Animator lightAnimator;
 
+    public GameObject portal;
+    public RespawnScript respawnScript;
+
     public RascalAnimations rascalAnimations;
 
     public GameObject rascal;
@@ -78,12 +81,15 @@ public class AwakenElder : MonoBehaviour
         lightAnimator.SetTrigger("Play");
         yield return new WaitForSeconds(1.75f);
         Destroy(rascal);
+        portal.SetActive(true);
         particlesToActivate.SetActive(false);
         Instantiate(spiritRascal, rascalPosition, Quaternion.identity);
         yield return new WaitForSeconds(1);
         newCamera.Priority = 100;
         newCamera.LookAt = GameObject.FindGameObjectWithTag("Player").transform;
         newCamera.Follow = GameObject.FindGameObjectWithTag("Player").transform;
+        respawnScript.AssignPlayer();
+        
 
     }
 }

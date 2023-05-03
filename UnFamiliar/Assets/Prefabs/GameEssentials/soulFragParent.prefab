@@ -115,6 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soulSO: {fileID: 11400000, guid: 80f959c35cea5e6438bb67aa798f3f16, type: 2}
   pm2: {fileID: 0}
+  rascalSoulParticles: {fileID: 0}
   canvas: {fileID: 0}
   fadeTime: 2.25
   visibleTime: 5
@@ -133,8 +134,6 @@ MonoBehaviour:
   source: {fileID: 7234497654760178658}
   clip: {fileID: 8300000, guid: 589fdc666475b2643956b7e345e8d43d, type: 3}
   animator: {fileID: 2565499329055998031}
-  particles: {fileID: 1171136648328235526, guid: d9bd5a098dc25314c8cc21a6fa2f47ec,
-    type: 3}
 --- !u!95 &2565499329055998031
 Animator:
   serializedVersion: 5

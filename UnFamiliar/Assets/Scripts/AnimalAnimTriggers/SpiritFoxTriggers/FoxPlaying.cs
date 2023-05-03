@@ -6,8 +6,6 @@ public class FoxPlaying : MonoBehaviour
 {
     public Animator foxAnimator;
     public PlayerMovement2 pm2;
-    public MoveAtoB moveAtoB;
-    public MoveAtoB moveInReverse;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,12 +19,7 @@ public class FoxPlaying : MonoBehaviour
     IEnumerator LockPlayer()
     {
         pm2.LockMovement();
-        moveAtoB.Move();
-        yield return new WaitForSeconds(3.25f);
-        moveAtoB.StopMoving();
-        yield return new WaitForSeconds(5.7f);
-        moveInReverse.Move();
-        yield return new WaitForSeconds(2.25f);
+        yield return new WaitForSeconds(12.25f);
         Destroy(this.gameObject);
         pm2.UnLockMovement();
     }

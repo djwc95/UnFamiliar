@@ -60,8 +60,10 @@ public class PlayerMovement2 : MonoBehaviour
     {
         if (movementLocked == true)
         {
+            move.x = 0;
+            move.y = verticalVelocity;
             rascalAnimations.SetIdle();
-            return;
+            //return;
         }
 
         groundedPlayer = controller.isGrounded;
@@ -84,13 +86,17 @@ public class PlayerMovement2 : MonoBehaviour
         // constant gravity keeps us pulled down when going down ramps
         verticalVelocity -= gravity * Time.deltaTime;
 
-        
-        move = new Vector3(Input.GetAxis("Horizontal"), 0, 0); //move only left/right
+
+        if (!movementLocked)
+        {
+            move = new Vector3(Input.GetAxis("Horizontal"), 0, 0); //move only left/right
+        }
+            
 
         move *= speed; // adjust speed in unity
 
         // allow jump as long as the player is on the ground
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && !movementLocked)
         {
             if (canJump)
             {

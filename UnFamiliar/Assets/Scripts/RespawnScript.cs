@@ -5,7 +5,7 @@ using static Unity.VisualScripting.Member;
 
 public class RespawnScript : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     public Vector3 respawnPoint;
     public GameObject whereToSpawn;
 
@@ -20,6 +20,7 @@ public class RespawnScript : MonoBehaviour
     void Start()
     {
         respawnPoint = whereToSpawn.transform.position;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,6 +31,10 @@ public class RespawnScript : MonoBehaviour
         }
     }
 
+    public void AssignPlayer()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     public IEnumerator DieSlow()
     {
         source.clip = clip; //play sound
