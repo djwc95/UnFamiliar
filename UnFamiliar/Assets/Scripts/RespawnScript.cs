@@ -12,7 +12,7 @@ public class RespawnScript : MonoBehaviour
     public GameObject soulParticles;
     public GameObject deathParticles;
 
-    public AudioSource source;
+    public AudioSource audioSource;
     public AudioClip clip;
 
     public PlayerMovement2 pm2;
@@ -37,8 +37,8 @@ public class RespawnScript : MonoBehaviour
     }
     public IEnumerator DieSlow()
     {
-        source.clip = clip; //play sound
-        source.Play();
+        audioSource.clip = clip; //play sound
+        audioSource.Play();
         Instantiate(deathParticles, player.transform.position, Quaternion.identity);
         player.SetActive(false);
         yield return new WaitForSeconds(2.5f);
