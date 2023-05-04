@@ -23,7 +23,6 @@ public class RandomizeAnimsLandAnimals : MonoBehaviour
         var randomRotate = new Vector3(0, Random.Range(0f, 360f), 0);
         yield return new WaitForSeconds(waitTime);
         transform.Rotate(randomRotate * Time.deltaTime, Space.Self);
-        Debug.Log("rotating");
         animator.speed = speed;
         StartCoroutine(Randomize());
     }
