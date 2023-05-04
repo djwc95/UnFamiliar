@@ -3,53 +3,27 @@ using UnityEngine;
 
 public class FrogHop : MonoBehaviour
 {
-    public float speed;
-
-    public Vector3 destination;
-    public GameObject carrotStick;
-
-    public Animator frogAnimator;
-    public float coolDown;
-    public float fullCoolDown = 2.5f;
-
-    public float minRange;
-    public float maxRange;
+    public MoveAtoB moveAtoB;
+    private Animator animator;
+    private float speed;
+    private float waitTime;
 
     private void Start()
     {
-        coolDown = fullCoolDown;
+        animator = GetComponent<Animator>();
+        moveAtoB.Move();
+        StartCoroutine(Randomize());
     }
 
-    void Update()
+    private IEnumerator Randomize()
     {
-        destination = carrotStick.transform.position;
-        IncrementPosition();
-
-        coolDown -= Time.deltaTime;
-        if (coolDown <= 0)
-        {
-            StartCoroutine(RollTime());
-            coolDown = fullCoolDown;
-        }
-    }
-
-    void IncrementPosition()
-    {
-        // Calculate the next position
-        float delta = speed * Time.deltaTime;
-        Vector3 currentPosition = gameObject.transform.position;
-        Vector3 nextPosition = Vector3.MoveTowards(currentPosition, destination, delta);
-
-        // Move the object to the next position
-        gameObject.transform.position = nextPosition;
-    }
-
-    public IEnumerator RollTime()
-    {
-        frogAnimator.SetTrigger("turn");
-        yield return new WaitForSeconds(Random.Range( minRange, maxRange));
-        frogAnimator.SetBool("turn", true);
-        yield return new WaitForSeconds(.1f);
-        frogAnimator.SetBool("turn", false);
+        waitTime = Random.Range(1f, 4f);
+        speed = Random.Range(0.75f, 2.5f);
+        var randomRotate = new Vector3(0, Random.Range(-360f, 360f), 0);
+        yield return new WaitForSeconds(waitTime);
+        transform.Rotate(randomRotate * Time.deltaTime * 25, Space.Self);
+        Debug.Log("rotating");
+        animator.speed = speed;
+        StartCoroutine(Randomize());
     }
 }

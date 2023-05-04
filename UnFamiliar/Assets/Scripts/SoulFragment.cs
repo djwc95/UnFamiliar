@@ -7,6 +7,7 @@ public class SoulFragment : MonoBehaviour
 {
     public SoulCounter soulSO;
     public PlayerMovement2 pm2;
+    public RascalSoulParticles rascalSoulParticles;
     //========================UI Elements=====================
     public CanvasGroup canvas;
     public float fadeTime;
@@ -33,34 +34,18 @@ public class SoulFragment : MonoBehaviour
     public Animator animator;
     private string disappear = "disappear";
 
-    private Vector3 thisLocation;
-    public GameObject particles;
-
-    private void Start()
-    {
-        thisLocation = transform.position;
-    }
-
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == ("Player"))
         {
             StartCoroutine(Visible());
-            StartCoroutine(LockPlayer());
             animator.Play(disappear, 0, 0f);
-            Instantiate(particles, thisLocation, Quaternion.identity); //particleFX
+            rascalSoulParticles.InstantiateParticles();
             soulSO.soulsNum++;
 
             source.clip = clip; //play sound
             source.Play();
         }
-    }
-
-    public IEnumerator LockPlayer()
-    {
-        pm2.LockMovement();
-        yield return new WaitForSeconds(2.5f);
-        pm2.UnLockMovement();
     }
 
     public IEnumerator Visible()

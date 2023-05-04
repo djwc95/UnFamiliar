@@ -5,14 +5,14 @@ using static Unity.VisualScripting.Member;
 
 public class RespawnScript : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     public Vector3 respawnPoint;
     public GameObject whereToSpawn;
 
     public GameObject soulParticles;
     public GameObject deathParticles;
 
-    public AudioSource source;
+    public AudioSource audioSource;
     public AudioClip clip;
 
     public PlayerMovement2 pm2;
@@ -20,6 +20,7 @@ public class RespawnScript : MonoBehaviour
     void Start()
     {
         respawnPoint = whereToSpawn.transform.position;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,10 +31,14 @@ public class RespawnScript : MonoBehaviour
         }
     }
 
+    public void AssignPlayer()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     public IEnumerator DieSlow()
     {
-        source.clip = clip; //play sound
-        source.Play();
+        audioSource.clip = clip; //play sound
+        audioSource.Play();
         Instantiate(deathParticles, player.transform.position, Quaternion.identity);
         player.SetActive(false);
         yield return new WaitForSeconds(2.5f);
