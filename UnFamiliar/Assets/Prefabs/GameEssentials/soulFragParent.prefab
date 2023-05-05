@@ -121,16 +121,16 @@ MonoBehaviour:
   visibleTime: 5
   soulsCollected: 0
   empty: {fileID: 0}
-  zero: {fileID: 21300000, guid: bb8d84468e02c4c49b8b8c83b4d28805, type: 3}
-  one: {fileID: 21300000, guid: 33dd140c6acecfe4c93b8e7be6cb94b5, type: 3}
-  two: {fileID: 21300000, guid: cd81f21fa35adbe42a9e47715c8656c3, type: 3}
-  three: {fileID: 21300000, guid: f39ca8eab17b765478c96504db0b2c57, type: 3}
-  four: {fileID: 21300000, guid: 1f38ce1bb16b5c64c9b7d2e8cff236df, type: 3}
-  five: {fileID: 21300000, guid: 2e6acd205c230c24196647a67caf12d1, type: 3}
-  six: {fileID: 21300000, guid: 24652db8634988e499343ec4919aa74b, type: 3}
-  seven: {fileID: 21300000, guid: 5db7a58f62eb8ca49b0e5abe9af4d090, type: 3}
-  eight: {fileID: 21300000, guid: 67fa4e6b16405bb4ead490f4759200a2, type: 3}
-  nine: {fileID: 21300000, guid: 871b589b041d1d1439602e299b885857, type: 3}
+  zero: {fileID: 21300000, guid: 193b581cdba29fa4d8ea15fda23ab998, type: 3}
+  one: {fileID: 21300000, guid: 5ed4ad750e891c54d951773b1d741b7e, type: 3}
+  two: {fileID: 21300000, guid: 96d87e5dba9f7ba4c8a5c14b35627687, type: 3}
+  three: {fileID: 21300000, guid: eaaff56a4b9ddc84995ae5f19301fdc5, type: 3}
+  four: {fileID: 21300000, guid: 19996adf911bdd74cbcfc63e75652994, type: 3}
+  five: {fileID: 21300000, guid: 02151e3805fd24746b72f2fcf63b377a, type: 3}
+  six: {fileID: 21300000, guid: 9865046407f7a78418bd85089872668c, type: 3}
+  seven: {fileID: 21300000, guid: d06e866616e68c74a8365284c7daf20a, type: 3}
+  eight: {fileID: 21300000, guid: 79b52c6f07073ab4dbccd5bef1767ade, type: 3}
+  nine: {fileID: 21300000, guid: 9fc56f944c46f6645a483f1bf087f2f2, type: 3}
   source: {fileID: 7234497654760178658}
   clip: {fileID: 8300000, guid: 589fdc666475b2643956b7e345e8d43d, type: 3}
   animator: {fileID: 2565499329055998031}
