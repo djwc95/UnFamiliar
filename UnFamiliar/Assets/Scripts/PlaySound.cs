@@ -6,9 +6,12 @@ public class PlaySound: MonoBehaviour
 {
     public AudioSource playSound;
 
-     void OnTriggerEnter(Collider other) {
-
-        playSound.Play();
-        
-    }
+     public void OnTriggerEnter(Collider other) 
+     {
+        if (other.gameObject.tag == "Ground")
+        {
+            playSound.Play();
+            Debug.Log("Play");
+        }
+     }
 }
