@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 234461546102330716}
   - component: {fileID: 345159746513907565}
   - component: {fileID: 345159746513907553}
-  - component: {fileID: 345159746513907555}
   - component: {fileID: 345159746513907554}
+  - component: {fileID: 1364621002}
   m_Layer: 0
   m_Name: Stag
   m_TagString: Untagged
@@ -58,7 +58,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579602212353429478}
-  m_LocalRotation: {x: -0, y: 0.7771935, z: -0, w: 0.62926173}
+  m_LocalRotation: {x: 0, y: 0.7771954, z: 0, w: 0.62925935}
   m_LocalPosition: {x: 5.11, y: 0, z: 14.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -102,23 +102,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &345159746513907555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579602212353429478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5132f445eb4ee46428397f9cec9d442b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointA: {fileID: 579602212353429478}
-  pointB: {fileID: 345159745188327222}
-  speed: 1.3
-  moveToB: 0
-  stayStill: 0
 --- !u!114 &345159746513907554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,8 +115,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StagAnimator: {fileID: 345159746513907553}
-  moveAtoB: {fileID: 345159746513907555}
-  waitTime: 18.9
+  moveAtoB: {fileID: 1364621002}
+  waitTime: 18.8
+--- !u!114 &1364621002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579602212353429478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3024b47c472df51489abef10e36024f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointA: {fileID: 579602212353429478}
+  pointB: {fileID: 345159745188327222}
+  speed: 2
+  moveToB: 0
+  stayStill: 0
 --- !u!1 &917163230731420373
 GameObject:
   m_ObjectHideFlags: 0

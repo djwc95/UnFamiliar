@@ -2,28 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoxRun : MonoBehaviour
+public class FoxRun: MonoBehaviour
 {
-    public bool CanScare = false;
-    public  Animator FoxAnimator;
-    
-    private void OnTriggerEnter(Collider other) 
+    public Animator FoxAnimator;
+    //public PlayerMovement2 pm2;
+    public MoveAtoB moveAtoB;
+    public float waitTime = 1.25f;
+    //public MoveAtoB moveInReverse;
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player"){
-            CanScare = true;
+        if (other.gameObject.tag == "Player")
+        {
+            StartCoroutine(SpookDeer());
+            FoxAnimator.SetTrigger("Spook");
         }
     }
-   private void OnTriggerExit(Collider other) 
-   {
-        if (other.gameObject.tag == "Player"){
-            CanScare = false;
-        }
-   }
-    private void Update()
+    IEnumerator DestroyOverTime()
     {
-        if (CanScare && Input.GetKeyDown(KeyCode.E))
-        {
-            FoxAnimator.SetTrigger("FoxRun");
-        }
+        yield return new WaitForSeconds(6);
+        Destroy(this.gameObject);
+    }
+
+    IEnumerator SpookDeer()
+    {
+        yield return new WaitForSeconds(waitTime);
+        moveAtoB.Move();
+        StartCoroutine(DestroyOverTime());
     }
 }
