@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Elder.unity
     guid: e729a82fce6131b469531c246eaf43f7
   - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 4c7701f2e8b541e4fb836c168ef7bb80
+  - enabled: 0
     path: Assets/Scenes/Credits.unity
     guid: d0e24b24535725941aeebd7e794135ee
   - enabled: 1
