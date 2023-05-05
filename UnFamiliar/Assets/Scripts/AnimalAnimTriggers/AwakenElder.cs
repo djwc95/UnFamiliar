@@ -50,6 +50,7 @@ public class AwakenElder : MonoBehaviour
                 rascalPosition = rascal.transform.position;
                 cameraToDisable.SetActive(false);
                 pm2.LockMovement();
+                canAwaken= false;
                 StartCoroutine(StartMoving());
             }
         }
