@@ -596,8 +596,6 @@ GameObject:
   - component: {fileID: 3954998054488005125}
   - component: {fileID: 3954998054488005124}
   - component: {fileID: 3954998054488005121}
-  - component: {fileID: 3954998054488005126}
-  - component: {fileID: 3954998054488005127}
   - component: {fileID: 3911610228089679073}
   m_Layer: 0
   m_Name: bathingBird
@@ -665,46 +663,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4189350507571193484}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5132f445eb4ee46428397f9cec9d442b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointA: {fileID: 4189350507571193484}
-  pointB: {fileID: 3954998055294931910}
-  speed: 0.25
-  moveToB: 0
-  stayStill: 0
---- !u!114 &3954998054488005126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4189350507571193484}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce43ff5998581714286f9ecd1e7c7d95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BirdPecking: {fileID: 3954998054488005124}
-  walkMove: {fileID: 3954998054488005121}
-  flyMove: {fileID: 3954998054488005127}
-  waitTime: 1.25
-  waitTimeHop: 1.2
-  canRotate: 0
-  peckTime: 0.69
-  canMove: 1
---- !u!114 &3954998054488005127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4189350507571193484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5132f445eb4ee46428397f9cec9d442b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3024b47c472df51489abef10e36024f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pointA: {fileID: 4189350507571193484}
@@ -725,7 +686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BirdBathing: {fileID: 3954998054488005124}
-  moveAtoB: {fileID: 3954998054488005127}
+  moveAtoB: {fileID: 3954998054488005121}
   waitTime: 1.25
 --- !u!1 &4927339909665516150
 GameObject:
@@ -960,7 +921,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8095203951634058284}
-  - component: {fileID: 3954998053897938364}
   m_Layer: 0
   m_Name: Armature.001
   m_TagString: Untagged
@@ -987,26 +947,6 @@ Transform:
   m_Father: {fileID: 3560166680322800694}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &3954998053897938364
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8216233905203833535}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ad0438da0142a424a919f07444c603cf, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &8508865197851879642
 GameObject:
   m_ObjectHideFlags: 0

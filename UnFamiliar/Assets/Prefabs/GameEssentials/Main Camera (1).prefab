@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1160979188}
   m_Layer: 0
   m_Name: VirtualCamera2
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 9210448184252561845}
   m_Layer: 0
   m_Name: VirtualCamera
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -442,8 +442,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9210448184997117800}
-  m_LocalRotation: {x: -0.009783457, y: 0.0019391556, z: 0.000018972587, w: 0.9999503}
-  m_LocalPosition: {x: 90.9, y: 0.71000004, z: -14.707936}
+  m_LocalRotation: {x: -0.009828083, y: 0, z: 0, w: 0.9999518}
+  m_LocalPosition: {x: -107.14, y: -0.042000055, z: -14.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

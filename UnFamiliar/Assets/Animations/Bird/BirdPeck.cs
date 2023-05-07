@@ -8,12 +8,13 @@ public class BirdPeck : MonoBehaviour
     public Animator BirdPecking;
     //public PlayerMovement2 pm2;
     public MoveAtoB walkMove;
-    public MoveAtoB flyMove;
+    public MoveAtoBFast flyMove;
     public float waitTime = 1.25f;
     public float waitTimeHop = 1.25f;
     public bool canRotate = true;
     public float peckTime = 0.5f;
     public bool canMove = true;
+    private Rigidbody rb;
     //public MoveAtoB moveInReverse;
 
     private void OnTriggerEnter(Collider other)
@@ -33,7 +34,8 @@ public class BirdPeck : MonoBehaviour
     IEnumerator SpookBird()
     {
         yield return new WaitForSeconds(waitTime);
-        flyMove.Move();
+        rb.useGravity= false;
+        flyMove.MoveFast();
         StartCoroutine(DestroyOverTime());
     }
 
@@ -60,5 +62,6 @@ public class BirdPeck : MonoBehaviour
         StartCoroutine(RotateBird());
         canRotate = true;
         canMove = true;
+        rb = GetComponent<Rigidbody>();
     }
 }

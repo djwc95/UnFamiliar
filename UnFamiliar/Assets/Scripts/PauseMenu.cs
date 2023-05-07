@@ -59,6 +59,5 @@ public class PauseMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-        Application.OpenURL("https://forms.gle/yWBb5t2J7ipECYGr8");
     }
 }

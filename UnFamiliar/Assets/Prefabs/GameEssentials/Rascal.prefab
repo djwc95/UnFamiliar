@@ -778,7 +778,7 @@ GameObject:
   - component: {fileID: 3350171506302378808}
   m_Layer: 3
   m_Name: Armature.001
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

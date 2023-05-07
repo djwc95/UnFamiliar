@@ -20,12 +20,12 @@ public class RespawnScript : MonoBehaviour
     void Start()
     {
         respawnPoint = whereToSpawn.transform.position;
-        player = GameObject.FindGameObjectWithTag("Player");
+        AssignPlayer();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.tag == "Player")
         {
             StartCoroutine(DieSlow());
         }
@@ -44,7 +44,6 @@ public class RespawnScript : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         player.transform.position = respawnPoint;
         player.SetActive(true);
-        yield return new WaitForSeconds(0.1f);
         Instantiate(soulParticles, respawnPoint, Quaternion.identity);
         pm2.LockMovement();
         yield return new WaitForSeconds(2.5f);

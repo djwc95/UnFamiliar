@@ -22,7 +22,6 @@ public class FrogHop : MonoBehaviour
         var randomRotate = new Vector3(0, Random.Range(-360f, 360f), 0);
         yield return new WaitForSeconds(waitTime);
         transform.Rotate(randomRotate * Time.deltaTime * 25, Space.Self);
-        Debug.Log("rotating");
         animator.speed = speed;
         StartCoroutine(Randomize());
     }

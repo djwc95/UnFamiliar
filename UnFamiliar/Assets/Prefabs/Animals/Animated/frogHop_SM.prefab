@@ -1440,6 +1440,8 @@ GameObject:
   - component: {fileID: 8956328134992033937}
   - component: {fileID: 8947651545703631787}
   - component: {fileID: 7266676082209277421}
+  - component: {fileID: 5479154525252154508}
+  - component: {fileID: 2905262998225595665}
   m_Layer: 0
   m_Name: frogHop_SM
   m_TagString: Untagged
@@ -1494,12 +1496,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8109343752951634832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5132f445eb4ee46428397f9cec9d442b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3024b47c472df51489abef10e36024f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pointA: {fileID: 8109343752951634832}
   pointB: {fileID: 8956328134935450755}
-  speed: 0.05
+  speed: 0.15
   moveToB: 0
   stayStill: 0
 --- !u!114 &8956328134992033942
@@ -1509,7 +1511,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8109343752951634832}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1627aab72412d74287f043829a00170, type: 3}
   m_Name: 
@@ -1638,6 +1640,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip1: {fileID: 8300000, guid: 07165d58b8ccbee469ed0ec59310b611, type: 3}
   clip2: {fileID: 8300000, guid: 4852e73e456d229469face0df5d909b1, type: 3}
+--- !u!54 &5479154525252154508
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109343752951634832}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!65 &2905262998225595665
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109343752951634832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14697266, y: 0.10525781, z: 0.17654228}
+  m_Center: {x: 0.00076293945, y: 0.03441316, z: 0.0135195255}
 --- !u!1 &8299848932609239362
 GameObject:
   m_ObjectHideFlags: 0

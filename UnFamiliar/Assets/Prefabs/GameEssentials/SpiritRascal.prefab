@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 3592590452559025419}
   m_Layer: 3
   m_Name: Armature.001
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2520,6 +2520,8 @@ MonoBehaviour:
   rascalAnimator: {fileID: 8605949147889306969}
   rascal: {fileID: 0}
   countDown: 0.25
+  footstep: []
+  audioSource: {fileID: 0}
 --- !u!114 &8605949147889306970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2647,7 +2649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb84aabc602c3f499d3e2ba1365c230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
   startValue: 0
 --- !u!114 &2280302209815747451
 MonoBehaviour:

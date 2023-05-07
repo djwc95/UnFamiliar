@@ -45,21 +45,21 @@ Material:
     m_Floats:
     - Vector1_2D28F683: 0.17
     - Vector1_FDAF1D7D: 1
-    - _Depth: 4.99
+    - _Depth: -1.2
     - _Displacement: 0.06
     - _Displacement_Animation_Speed: 0.09
     - _Displacement_Scale: 0.26
     - _Normal_Animation_Speed: 0.67
-    - _Normal_Strength: 0.14
+    - _Normal_Strength: 0.478
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothess: 0.41
-    - _Strength: 0.17
+    - _Smoothess: 0.332
+    - _Strength: 1.141
     m_Colors:
-    - _Deep_Water_Color: {r: 0.17924526, g: 0.09233711, b: 0.019446427, a: 1}
-    - _Main_Normal_Tiling: {r: 5, g: 5, b: 0, a: 0}
-    - _Secondary_Normal_Tiling_1: {r: 5, g: 5, b: 0, a: 0}
-    - _Shallow_Water_Color: {r: 0.30188674, g: 0.106696464, b: 0.015663939, a: 0.94509804}
+    - _Deep_Water_Color: {r: 0.05598075, g: 0.32075468, b: 0.18513876, a: 1}
+    - _Main_Normal_Tiling: {r: 2, g: 2, b: 0, a: 0}
+    - _Secondary_Normal_Tiling_1: {r: 2, g: 2, b: 0, a: 0}
+    - _Shallow_Water_Color: {r: 0.16981131, g: 0.06272533, b: 0.032840863, a: 0.72156864}
   m_BuildTextureStacks: []
 --- !u!114 &2152159261516613136
 MonoBehaviour:
