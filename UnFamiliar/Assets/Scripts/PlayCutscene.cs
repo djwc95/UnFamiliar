@@ -12,6 +12,7 @@ public class PlayCutscene : MonoBehaviour
     public int levelToLoad;
     public CanvasGroup canvasGroup;
     public float fadeTime = 1.0f;
+    //public AudioSource[] sourcesToDisable;
 
     private void Start()
     {
@@ -23,8 +24,7 @@ public class PlayCutscene : MonoBehaviour
         {
             videoCanvas.SetActive(true);
             cutscene.SetActive(true);
-            StartCoroutine(FadeIn());
-            StartCoroutine(VideoPlay());
+            StartCoroutine(StopAudio());
         }
     }
 
@@ -35,7 +35,7 @@ public class PlayCutscene : MonoBehaviour
         loading.LoadScene(levelToLoad);
     }
 
-    private IEnumerator FadeIn()
+    public IEnumerator FadeIn()
     {
         while (canvasGroup.alpha < 1)
         {
@@ -43,6 +43,7 @@ public class PlayCutscene : MonoBehaviour
             yield return null;
         }
         yield return null;
+        StartCoroutine(VideoPlay());
     }
 
     private void Update()
@@ -55,5 +56,25 @@ public class PlayCutscene : MonoBehaviour
                 loading.LoadScene(levelToLoad);
             }
         }
+    }
+
+    public IEnumerator StopAudio()
+    {
+        var allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource audioS in allAudioSources)
+        {
+            audioS.Stop();
+        }
+
+        yield return new WaitForSeconds(.25f);
+        StartCoroutine(FadeIn());
+        
+    }
+
+    public void MenuVideo()
+    {
+        videoCanvas.SetActive(true);
+        cutscene.SetActive(true);
+        StartCoroutine(StopAudio());
     }
 }
