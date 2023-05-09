@@ -42,7 +42,6 @@ public class PlayCutscene : MonoBehaviour
             canvasGroup.alpha += Time.deltaTime / fadeTime;
             yield return null;
         }
-        yield return null;
         StartCoroutine(VideoPlay());
     }
 
@@ -53,6 +52,8 @@ public class PlayCutscene : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 videoCanvas.SetActive(false);
+                var cutsceneAudio = GetComponentInChildren<AudioSource>();
+                cutsceneAudio.Stop();
                 loading.LoadScene(levelToLoad);
             }
         }

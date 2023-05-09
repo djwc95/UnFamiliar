@@ -8,7 +8,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LookLock 0
-  m_Speed: 0.05
+  m_Speed: 0.02
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -6655643158380673104}
@@ -58,7 +58,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LookLock
-  m_Speed: 0.03
+  m_Speed: 0.01
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -3123716919852694623}
@@ -130,7 +130,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Look
-  m_Speed: 0.5
+  m_Speed: 0.35
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -2441179107591659726}
@@ -345,7 +345,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LookReset
-  m_Speed: -0.5
+  m_Speed: -0.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 5743867171788485723}

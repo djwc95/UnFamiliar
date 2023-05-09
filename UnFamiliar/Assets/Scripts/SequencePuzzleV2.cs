@@ -39,11 +39,10 @@ public class SequencePuzzleV2 : MonoBehaviour
     public AudioClip stoneDragging;
     public AudioClip chime;
     public AudioSource audioSource;
+    public Animator doorAnimator;
 
     private bool canWin = true;
     private bool canInteract = true;
-
-    [SerializeField] private Animator gate = null;
 
     void Update()
     {
@@ -188,7 +187,7 @@ public class SequencePuzzleV2 : MonoBehaviour
     {
         if (canWin)
         {
-            gate.Play("OpenGate", 0, 0f);
+            doorAnimator.SetTrigger("open");
             openGate.Shake();
             audioSource.PlayOneShot(passSound, 0.7f);
             audioSource.clip = stoneDragging;

@@ -67,7 +67,7 @@ public class SoulFragment : MonoBehaviour
 
     private IEnumerator FadeIn()
     {
-        while (canvas.alpha < 1)
+        while (canvas.alpha < 0.5f)
         {
             canvas.alpha += Time.deltaTime / fadeTime;
             yield return null;

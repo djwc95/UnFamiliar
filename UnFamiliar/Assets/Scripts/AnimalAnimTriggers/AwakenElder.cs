@@ -61,8 +61,8 @@ public class AwakenElder : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         elderAnimator.SetTrigger("StartElder");
         yield return new WaitForSeconds(17.5f);
-        moveAtoB.moveToB= true;
-        moveAtoB.stayStill = false;
+        //moveAtoB.moveToB= true;
+        //moveAtoB.stayStill = false;
         yield return new WaitForSeconds(5f);
         screenShake.GenerateImpulse();
         yield return new WaitForSeconds(1.1f);
